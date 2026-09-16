@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdullah Amanat Ali — Flutter Developer | AI &amp; Business Software</title>
+<meta name="description" content="Abdullah Amanat Ali is a Flutter developer building production mobile applications, workforce and GPS tracking systems, order and dispatch software, and AI voice assistants. Based in Sialkot, Pakistan; available for remote and international work.">
+<meta name="keywords" content="Flutter Developer, Flutter App Developer, Dart Developer, Mobile App Developer, AI App Developer, Business Software Developer, Flutter Developer Pakistan, Flutter Developer Dubai">
+<meta name="author" content="Abdullah Amanat Ali">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abdullah Amanat Ali — Flutter Developer | AI & Business Software Developer">
+<meta property="og:description" content="Production Flutter applications for workforce management, GPS tracking, order dispatch and AI voice automation.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="geo.region" content="PK-PB">
+<meta name="geo.placename" content="Sialkot, Punjab, Pakistan">
+<meta name="theme-color" content="#0e0c0a">
+<!-- Optional: for a rich preview when the link is shared on LinkedIn/WhatsApp, upload og-image.png next to this file and uncomment: -->
+<!-- <meta property="og:image" content="https://YOUR-DOMAIN/og-image.png"> -->
+<!-- Set once deployed: -->
+<!-- <link rel="canonical" href="https://YOUR-DOMAIN/"> -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e0c0a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='18' font-style='italic' fill='%23e3b25a'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Abdullah Amanat Ali","jobTitle":"Flutter Developer","email":"mailto:abdullahdecent31@gmail.com","telephone":"+92 343 8450469","url":"https://github.com/Abdullah37249","sameAs":["https://github.com/Abdullah37249"],"address":{"@type":"PostalAddress","addressLocality":"Sialkot","addressRegion":"Punjab","addressCountry":"PK"},"worksFor":{"@type":"Organization","name":"MetaXperts"},"knowsAbout":["Flutter","Dart","Firebase","MQTT","Oracle ORDS","Oracle APEX","Kotlin","Swift","GPS tracking","Voice AI"],"knowsLanguage":["en","ur","pa"],"hasOccupation":{"@type":"Occupation","name":"Flutter Developer","occupationLocation":{"@type":"Country","name":"Pakistan"}},"alumniOf":{"@type":"CollegeOrUniversity","name":"Virtual University of Pakistan"}}
+</script>
+<style>
+/* ============================================================
+   1. TOKENS
+   ============================================================ */
+:root {
+  --bg: #0e0c0a;
+  --bg-2: #14110e;
+  --surface: #1a1613;
+  --surface-2: #211c18;
+  --line: #2a241f;
+  --line-2: #3a322b;
+  --text: #f3eee6;
+  --text-2: #c9c1b5;
+  --muted: #8a8177;
+  --gold: #e3b25a;
+  --gold-2: #f0c877;
+  --gold-dim: rgba(227,178,90,.13);
+  --gold-line: rgba(227,178,90,.38);
+
+  --scrim: rgba(8,6,4,.7);
+  --nav-bg: rgba(14,12,10,.85);
+  --glass: rgba(14,12,10,.8);
+  --grain-op: .05;
+
+  --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Instrument Sans", "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+  --container: 1240px;
+  --gutter: clamp(20px, 4vw, 56px);
+  --ease-out: cubic-bezier(.16,1,.3,1);
+  --ease-io: cubic-bezier(.65,0,.35,1);
+}
+
+:root[data-theme="light"] {
+  --bg: #f7f2e9; --bg-2: #f0e9dc; --surface: #fffaf1; --surface-2: #f3ebdd;
+  --line: #e4dacb; --line-2: #cfc1aa;
+  --text: #1c1712; --text-2: #4a4038; --muted: #7b6f62;
+  --gold: #8f6418; --gold-2: #74500f; --gold-dim: rgba(143,100,24,.12); --gold-line: rgba(143,100,24,.45);
+  --scrim: rgba(60,48,34,.55); --nav-bg: rgba(247,242,233,.85); --glass: rgba(247,242,233,.85); --grain-op: .035;
+}
+:root[data-theme="light"] .btn-gold { color: #fff8ea; }
+:root[data-theme="light"] .hero-bg .glow { opacity: .6; }
+html { color-scheme: dark; }
+:root[data-theme="light"] { color-scheme: light; }
+body { transition: background .4s, color .4s; }
+
+/* ============================================================
+   2. BASE
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--text);
+  font-family: var(--sans); font-size: 17px; line-height: 1.65;
+  -webkit-font-smoothing: antialiased; overflow-x: hidden;
+}
+body.locked { overflow: hidden; }
+img, svg { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; padding: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+p { margin: 0; }
+h1, h2, h3, h4 { margin: 0; font-weight: 500; line-height: 1.1; }
+:focus-visible { outline: 2px solid var(--gold-2); outline-offset: 3px; border-radius: 3px; }
+.skip-link { position: absolute; left: 16px; top: -60px; background: var(--gold); color: #1a1408; padding: 10px 14px; border-radius: 6px; z-index: 1000; font-weight: 600; }
+.skip-link:focus { top: 16px; }
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+.section { padding: clamp(96px, 12vw, 170px) 0; position: relative; }
+
+/* Film grain overlay — very subtle texture */
+.grain { position: fixed; inset: -50%; width: 200%; height: 200%; pointer-events: none; z-index: 1; opacity: var(--grain-op);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 8s steps(10) infinite; }
+@keyframes grain { 0%{transform:translate(0,0)} 10%{transform:translate(-5%,-10%)} 30%{transform:translate(3%,-15%)} 50%{transform:translate(12%,9%)} 70%{transform:translate(9%,4%)} 90%{transform:translate(-1%,7%)} 100%{transform:translate(0,0)} }
+
+/* Cursor spotlight */
+.spot { position: fixed; left: 0; top: 0; width: 640px; height: 640px; margin: -320px 0 0 -320px; border-radius: 50%; pointer-events: none; z-index: 0;
+  background: radial-gradient(circle, rgba(227,178,90,.07), transparent 60%); opacity: 0; transition: opacity .6s; will-change: transform; }
+body.has-mouse .spot { opacity: 1; }
+
+/* ============================================================
+   3. TYPOGRAPHY
+   ============================================================ */
+.display { font-family: var(--serif); font-weight: 300; font-size: clamp(3.2rem, 9.5vw, 8.6rem); line-height: .95; letter-spacing: -0.03em; font-variation-settings: "opsz" 144; }
+.display em { font-style: italic; font-weight: 300; color: var(--gold-2); }
+.h2 { font-family: var(--serif); font-weight: 500; font-size: clamp(2.2rem, 4.6vw, 3.9rem); letter-spacing: -0.02em; line-height: 1.05; }
+.h2 em { font-style: italic; font-weight: 300; }
+.h3 { font-family: var(--serif); font-weight: 500; font-size: clamp(1.6rem, 2.6vw, 2.3rem); letter-spacing: -0.015em; }
+.lead { font-size: clamp(1.08rem, 1.5vw, 1.3rem); color: var(--text-2); line-height: 1.6; }
+.eyebrow { font-size: .86rem; font-weight: 600; letter-spacing: .04em; color: var(--gold); display: inline-flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--gold); }
+.muted { color: var(--muted); }
+.small { font-size: .88rem; }
+
+/* Split-text reveal */
+.split .w { display: inline-block; overflow: hidden; vertical-align: bottom; }
+.split .w > span { display: inline-block; transform: translateY(110%); transition: transform 1s var(--ease-out); transition-delay: calc(var(--i) * 45ms); }
+.split.in .w > span { transform: none; }
+
+/* Generic reveal */
+.rv { opacity: 0; transform: translateY(28px); transition: opacity .9s var(--ease-out), transform .9s var(--ease-out); transition-delay: var(--d, 0ms); }
+.rv.in { opacity: 1; transform: none; }
+.line-rv { position: relative; }
+.line-rv::after { content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 100%; background: var(--line-2); transform: scaleX(0); transform-origin: left; transition: transform 1.2s var(--ease-out); }
+.line-rv.in::after { transform: scaleX(1); }
+
+/* ============================================================
+   4. COMPONENTS
+   ============================================================ */
+.btn { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 1rem; min-height: 52px; overflow: hidden; isolation: isolate; border: 1px solid transparent; transition: color .3s, border-color .3s, transform .25s var(--ease-out); will-change: transform; }
+.btn-gold { background: var(--gold); color: #1a1408; }
+.btn-gold::before { content: ""; position: absolute; inset: 0; background: var(--gold-2); transform: translateY(101%); transition: transform .45s var(--ease-out); z-index: -1; border-radius: inherit; }
+.btn-gold:hover::before { transform: none; }
+.btn-line { border-color: var(--line-2); color: var(--text); }
+.btn-line::before { content: ""; position: absolute; inset: 0; background: var(--surface-2); transform: scaleX(0); transform-origin: left; transition: transform .45s var(--ease-out); z-index: -1; border-radius: inherit; }
+.btn-line:hover { border-color: var(--text-2); }
+.btn-line:hover::before { transform: none; }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn .ico { transition: transform .35s var(--ease-out); }
+.btn:hover .ico { transform: translateX(4px); }
+
+.chip { display: inline-block; padding: 6px 12px; border-radius: 999px; font-size: .8rem; font-weight: 500; color: var(--text-2); border: 1px solid var(--line-2); background: var(--bg-2); line-height: 1.3; }
+.chip.gold { color: var(--gold-2); border-color: var(--gold-line); background: var(--gold-dim); }
+
+/* Workflow flow (modal) */
+.flow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 0; }
+.flow li { display: flex; align-items: center; }
+.flow .node { padding: 10px 16px; border: 1px solid var(--line-2); border-radius: 999px; background: var(--surface); font-weight: 600; font-size: .9rem; white-space: nowrap; }
+.flow .node.hl { border-color: var(--gold-line); background: var(--gold-dim); color: var(--gold-2); }
+.flow .edge { width: 28px; height: 1px; margin: 0 6px; background: var(--line-2); position: relative; flex: none; }
+.flow .edge::after { content: ""; position: absolute; right: -1px; top: -3px; width: 7px; height: 7px; border-top: 1px solid var(--line-2); border-right: 1px solid var(--line-2); transform: rotate(45deg); }
+.flow li:first-child .edge { display: none; }
+
+/* ============================================================
+   5. INTRO (page load)
+   ============================================================ */
+.intro { position: fixed; inset: 0; z-index: 500; background: #0e0c0a; color: #f3eee6; display: grid; place-items: center; transition: transform .9s var(--ease-io), visibility 0s .9s; }
+.intro.done { transform: translateY(-100%); visibility: hidden; }
+.intro-inner { text-align: center; }
+.intro-name { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.6rem); font-weight: 300; letter-spacing: -.02em; overflow: hidden; }
+.intro-name span { display: inline-block; transform: translateY(110%); animation: up .9s var(--ease-out) .2s forwards; }
+.intro-bar { width: 160px; height: 1px; background: var(--line-2); margin: 22px auto 0; position: relative; overflow: hidden; }
+.intro-bar::after { content: ""; position: absolute; inset: 0; background: var(--gold); transform: scaleX(0); transform-origin: left; animation: fill 1.3s var(--ease-io) .3s forwards; }
+.intro-sub { margin-top: 14px; font-size: .85rem; color: var(--muted); opacity: 0; animation: fade .6s ease .9s forwards; }
+@keyframes up { to { transform: none; } }
+@keyframes fill { to { transform: none; } }
+@keyframes fade { to { opacity: 1; } }
+
+/* ============================================================
+   6. NAV
+   ============================================================ */
+.nav { position: fixed; inset: 0 0 auto 0; z-index: 100; height: 80px; transition: transform .5s var(--ease-out), background .4s, border-color .4s; border-bottom: 1px solid transparent; }
+.nav.solid { background: var(--nav-bg); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom-color: var(--line); }
+.nav.hide { transform: translateY(-100%); }
+.nav-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; letter-spacing: -.01em; display: flex; align-items: baseline; gap: 6px; }
+.brand i { font-style: italic; color: var(--gold-2); }
+.nav-links { display: flex; align-items: center; gap: 30px; }
+.nav-links a { position: relative; font-size: .95rem; font-weight: 500; color: var(--text-2); padding: 6px 0; transition: color .3s; }
+.nav-links a::after { content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 100%; background: var(--gold); transform: scaleX(0); transform-origin: right; transition: transform .45s var(--ease-out); }
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+.nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); transform-origin: left; }
+.nav-time { font-size: .82rem; color: var(--muted); font-variant-numeric: tabular-nums; display: flex; align-items: center; gap: 8px; }
+.nav-time i { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); animation: blink 2.4s infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+.burger { display: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line-2); place-items: center; }
+.burger span { display: block; width: 18px; height: 1.5px; background: var(--text); transition: transform .4s var(--ease-out), opacity .2s; }
+.burger span + span { margin-top: 5px; }
+.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+.progress { position: fixed; left: 0; top: 0; height: 2px; width: 0; background: var(--gold); z-index: 101; }
+
+/* ============================================================
+   7. HERO
+   ============================================================ */
+.hero { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-end; padding: 140px 0 48px; position: relative; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; pointer-events: none; }
+.hero-bg .ring { position: absolute; border-radius: 50%; border: 1px solid rgba(227,178,90,.14); }
+.hero-bg .r1 { width: 62vw; height: 62vw; right: -20vw; top: -14vw; animation: spin 90s linear infinite; }
+.hero-bg .r2 { width: 42vw; height: 42vw; right: -10vw; top: -4vw; border-style: dashed; animation: spin 60s linear infinite reverse; }
+.hero-bg .r3 { width: 24vw; height: 24vw; right: -1vw; top: 5vw; border-color: rgba(227,178,90,.28); }
+.hero-bg .r1::before, .hero-bg .r2::before { content: ""; position: absolute; top: -4px; left: 50%; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 18px var(--gold); }
+.hero-bg .glow { position: absolute; right: -10vw; top: -10vw; width: 60vw; height: 60vw; border-radius: 50%; background: radial-gradient(circle, rgba(227,178,90,.09), transparent 62%); }
+@keyframes spin { to { transform: rotate(360deg); } }
+.hero-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: clamp(48px, 8vh, 90px); position: relative; }
+.hero-role { font-size: clamp(.95rem, 1.3vw, 1.1rem); color: var(--text-2); }
+.hero-role b { color: var(--gold-2); font-weight: 600; }
+.hero-loc { text-align: right; font-size: .86rem; color: var(--muted); line-height: 1.5; }
+.hero-name { position: relative; }
+.hero-bottom { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(28px, 5vw, 80px); align-items: end; margin-top: clamp(36px, 5vh, 64px); position: relative; }
+.hero-bottom .lead { max-width: 46ch; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+.hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line-2); }
+.stat { padding: 22px 0 0; border-right: 1px solid var(--line); padding-right: 16px; }
+.stat + .stat { padding-left: 20px; }
+.stat:last-child { border-right: 0; }
+.stat .n { font-family: var(--serif); font-size: clamp(1.9rem, 3.4vw, 3rem); font-weight: 300; color: var(--gold-2); letter-spacing: -.02em; line-height: 1; font-variant-numeric: tabular-nums; }
+.stat .l { font-size: .84rem; color: var(--muted); margin-top: 8px; }
+.scroll-cue { position: absolute; left: var(--gutter); bottom: 20px; font-size: .78rem; color: var(--muted); display: flex; align-items: center; gap: 10px; }
+.scroll-cue i { width: 1px; height: 40px; background: var(--line-2); position: relative; overflow: hidden; }
+.scroll-cue i::after { content: ""; position: absolute; inset: 0; background: var(--gold); transform: translateY(-100%); animation: cue 2.2s var(--ease-io) infinite; }
+@keyframes cue { 40% { transform: none; } 100% { transform: translateY(100%); } }
+
+/* Marquee ticker */
+.ticker { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; padding: 18px 0; background: var(--bg-2); }
+.ticker-track { display: flex; width: max-content; animation: ticker 48s linear infinite; }
+.ticker:hover .ticker-track { animation-play-state: paused; }
+.ticker-track span { padding: 0 34px; font-family: var(--serif); font-size: 1.05rem; color: var(--text-2); display: inline-flex; align-items: center; gap: 34px; white-space: nowrap; }
+.ticker-track span::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); opacity: .7; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+
+/* ============================================================
+   8. ABOUT
+   ============================================================ */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(40px, 6vw, 110px); align-items: start; }
+.about-copy .h2 { margin-bottom: 30px; }
+.about-copy p + p { margin-top: 20px; }
+.about-side { position: sticky; top: 110px; }
+.facts { border-top: 1px solid var(--line-2); }
+.facts div { display: grid; grid-template-columns: 130px 1fr; gap: 18px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.facts dt { color: var(--muted); font-size: .88rem; margin: 0; }
+.facts dd { margin: 0; font-weight: 500; }
+.quote { margin-top: 36px; font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.4rem; line-height: 1.4; color: var(--text-2); padding-left: 22px; border-left: 1px solid var(--gold); }
+
+/* ============================================================
+   9. EXPERIENCE
+   ============================================================ */
+.exp-head { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end; margin-bottom: 56px; }
+.exp-card { display: grid; grid-template-columns: 300px 1fr; gap: clamp(28px, 5vw, 90px); padding-top: 40px; border-top: 1px solid var(--line-2); }
+.exp-co { font-family: var(--serif); font-size: 2rem; font-weight: 500; letter-spacing: -.02em; }
+.exp-when { color: var(--gold-2); font-weight: 600; margin-top: 8px; }
+.exp-where { color: var(--muted); font-size: .9rem; margin-top: 4px; }
+.exp-desc { color: var(--text-2); font-size: .95rem; margin-top: 22px; line-height: 1.6; }
+.exp-role { font-family: var(--serif); font-size: 1.5rem; margin-bottom: 4px; }
+.exp-sub { color: var(--muted); font-size: .9rem; margin-bottom: 30px; }
+.exp-items li { display: grid; grid-template-columns: 56px 1fr; gap: 12px; padding: 22px 0; border-top: 1px solid var(--line); color: var(--text-2); }
+.exp-items li:last-child { border-bottom: 1px solid var(--line); }
+.exp-items .k { font-family: var(--serif); font-style: italic; color: var(--gold-2); font-size: 1.15rem; }
+.exp-items b { color: var(--text); font-weight: 600; }
+
+/* ============================================================
+   10. PROJECTS — alternating full-width rows
+   ============================================================ */
+.proj-head { margin-bottom: clamp(48px, 7vw, 96px); max-width: 60ch; }
+.case { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 96px); align-items: center; padding: clamp(48px, 7vw, 100px) 0; border-top: 1px solid var(--line); }
+.case:first-of-type { border-top: 0; padding-top: 0; }
+.case.rev .case-vis { order: 2; }
+.case-idx { font-family: var(--serif); font-style: italic; color: var(--gold-2); font-size: 1.2rem; margin-bottom: 18px; display: block; }
+.case-cats { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 22px; }
+.case p.desc { color: var(--text-2); max-width: 50ch; }
+.case-stack { margin: 22px 0 30px; color: var(--muted); font-size: .9rem; }
+.case-stack b { color: var(--text-2); font-weight: 500; }
+.case-open { position: relative; display: inline-flex; align-items: center; gap: 12px; font-weight: 600; color: var(--text); padding: 4px 0; }
+.case-open .arr { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line-2); display: grid; place-items: center; transition: background .35s, border-color .35s, transform .35s var(--ease-out); }
+.case-open .arr svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; transition: transform .35s var(--ease-out); }
+.case:hover .arr, .case-open:focus-visible .arr { background: var(--gold); border-color: var(--gold); color: #1a1408; }
+.case:hover .arr svg { transform: translate(2px,-2px); }
+.case-open::after { content: ""; position: absolute; inset: 0; }
+.case { position: relative; }
+.case-open:focus-visible { outline: none; }
+.case-open:focus-visible .arr { outline: 2px solid var(--gold-2); outline-offset: 3px; }
+
+/* Visual frame with tilt */
+.case-vis { perspective: 1200px; }
+.frame { position: relative; border-radius: 22px; border: 1px solid var(--line-2); background: linear-gradient(160deg, var(--surface-2), var(--bg-2)); overflow: hidden; aspect-ratio: 4 / 3; transform-style: preserve-3d; transition: transform .6s var(--ease-out), box-shadow .6s; box-shadow: 0 40px 80px -40px rgba(0,0,0,.9); }
+.frame::before { content: ""; position: absolute; inset: 0; background: radial-gradient(500px 300px at var(--mx, 70%) var(--my, 20%), rgba(227,178,90,.12), transparent 60%); pointer-events: none; transition: opacity .4s; opacity: 0; }
+.case:hover .frame::before { opacity: 1; }
+.frame svg { width: 100%; height: 100%; }
+.frame .lbl { position: absolute; left: 20px; bottom: 18px; display: flex; gap: 8px; }
+.frame .lbl span { padding: 6px 10px; border-radius: 8px; background: var(--glass); border: 1px solid var(--line-2); font-size: .74rem; color: var(--text-2); backdrop-filter: blur(6px); }
+
+/* SVG anim helpers */
+.dash { stroke-dasharray: 6 8; animation: dash 1.6s linear infinite; }
+@keyframes dash { to { stroke-dashoffset: -28; } }
+.draw { stroke-dasharray: 1000; stroke-dashoffset: 1000; }
+.in .draw, .case.in .draw { animation: draw 2.4s var(--ease-out) forwards; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.ping { transform-origin: center; animation: ping 2.4s ease-out infinite; }
+@keyframes ping { 0% { opacity: .8; transform: scale(.5); } 100% { opacity: 0; transform: scale(2.8); } }
+.bar { transform-origin: bottom; animation: bar 1.4s ease-in-out infinite; }
+@keyframes bar { 0%,100% { transform: scaleY(.3); } 50% { transform: scaleY(1); } }
+.orbit { transform-origin: 200px 150px; animation: spin 14s linear infinite; }
+.float { animation: floaty 5s ease-in-out infinite; }
+@keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+/* ============================================================
+   11. ARCHITECTURE (animated stack)
+   ============================================================ */
+.arch { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(40px, 6vw, 110px); align-items: start; }
+.arch-copy { position: sticky; top: 110px; }
+.arch-copy p + p { margin-top: 18px; }
+.arch-vis { position: relative; }
+.arch-vis svg { width: 100%; height: auto; }
+.arch-vis text { font-family: var(--sans); fill: var(--text); font-size: 15px; font-weight: 600; }
+.arch-vis .sub { fill: var(--muted); font-size: 11px; font-weight: 500; }
+.arch-vis .sub[fill] { fill: var(--gold-2); }
+.arch-vis .box { fill: var(--surface); stroke: var(--line-2); }
+.arch-vis .box.top { fill: rgba(227,178,90,.12); stroke: var(--gold-line); }
+.arch-vis .wire { stroke: var(--line-2); fill: none; }
+.arch-vis .pulse { fill: var(--gold); }
+.arch-list { display: grid; gap: 10px; margin-top: 22px; }
+.arch-list li { display: grid; grid-template-columns: 26px 1fr; gap: 12px; font-size: .95rem; color: var(--text-2); padding: 10px 0; border-bottom: 1px solid var(--line); }
+.arch-list li span:first-child { color: var(--gold-2); font-family: var(--serif); font-style: italic; }
+
+/* ============================================================
+   12. SKILLS
+   ============================================================ */
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 48px; margin-top: 56px; }
+.sk h3 { font-family: var(--serif); font-size: 1.25rem; font-weight: 500; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--line-2); display: flex; justify-content: space-between; align-items: baseline; }
+.sk h3 small { font-family: var(--sans); font-size: .78rem; color: var(--muted); font-weight: 500; }
+.sk ul { display: flex; flex-wrap: wrap; gap: 6px; }
+.sk li { transition: transform .35s var(--ease-out), border-color .3s, color .3s; }
+.sk li:hover { transform: translateY(-2px); border-color: var(--gold-line); color: var(--gold-2); }
+
+/* ============================================================
+   13. CONTACT & FOOTER
+   ============================================================ */
+.contact { text-align: center; }
+.contact .display { font-size: clamp(2.6rem, 7.5vw, 6.4rem); }
+.contact .lead { max-width: 44ch; margin: 30px auto 0; }
+.contact-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+/* Contact form */
+.cform { max-width: 720px; margin: 48px auto 0; text-align: left; padding: clamp(24px, 4vw, 40px); border: 1px solid var(--line-2); border-radius: 22px; background: linear-gradient(160deg, var(--surface), var(--bg-2)); position: relative; overflow: hidden; }
+.cform::before { content: ""; position: absolute; inset: -1px; border-radius: inherit; padding: 1px; background: linear-gradient(120deg, var(--gold-line), transparent 40%, transparent 60%, var(--gold-line)); -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; opacity: .7; }
+.cform h3 { font-family: var(--serif); font-weight: 500; font-size: 1.5rem; margin-bottom: 6px; }
+.cform .hint { color: var(--muted); font-size: .9rem; margin-bottom: 26px; }
+.field { display: grid; gap: 8px; margin-bottom: 18px; }
+.field label { font-size: .88rem; font-weight: 600; color: var(--text-2); display: flex; justify-content: space-between; }
+.field label small { font-weight: 500; color: var(--muted); }
+.field input, .field textarea { width: 100%; font: inherit; color: var(--text); background: var(--bg); border: 1px solid var(--line-2); border-radius: 12px; padding: 14px 16px; min-height: 52px; transition: border-color .3s, box-shadow .3s; }
+.field textarea { min-height: 150px; resize: vertical; line-height: 1.55; }
+.field input::placeholder, .field textarea::placeholder { color: var(--muted); }
+.field input:focus, .field textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 4px var(--gold-dim); }
+.field input:user-invalid, .field textarea:user-invalid { border-color: #d9856b; }
+.cform-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin-top: 8px; }
+.cform-foot .to { font-size: .84rem; color: var(--muted); }
+.cform-foot .to b { color: var(--text-2); font-weight: 500; }
+.form-msg { margin-top: 16px; font-size: .92rem; min-height: 1.4em; color: var(--text-2); }
+.form-msg.ok { color: var(--gold-2); }
+.form-msg.err { color: #e0947c; }
+.btn[disabled] { opacity: .6; cursor: progress; transform: none !important; }
+.btn-wa { border-color: rgba(37,211,102,.45); color: var(--text); }
+.btn-wa svg { color: #25d366; }
+.btn-wa::before { background: rgba(37,211,102,.12); }
+.btn-wa:hover { border-color: #25d366; }
+:root[data-theme="light"] .btn-wa svg { color: #128c4a; }
+.cform-alt { display: flex; align-items: center; gap: 14px; margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--line); flex-wrap: wrap; }
+.cform-alt .or { font-size: .88rem; color: var(--muted); }
+.wa-pill { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 999px; border: 1px solid rgba(37,211,102,.45); font-weight: 600; font-size: .9rem; transition: background .3s, border-color .3s; }
+.wa-pill svg { width: 17px; height: 17px; color: #25d366; }
+.wa-pill:hover { background: rgba(37,211,102,.12); border-color: #25d366; }
+:root[data-theme="light"] .wa-pill svg { color: #128c4a; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.contact-rows { max-width: 720px; margin: 64px auto 0; text-align: left; border-top: 1px solid var(--line-2); }
+.contact-rows div { display: grid; grid-template-columns: 90px 1fr auto; gap: 16px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.contact-rows .k { color: var(--muted); font-size: .88rem; }
+.contact-rows .v { font-weight: 500; overflow-wrap: anywhere; }
+.contact-rows .v a { position: relative; }
+.contact-rows .v a:hover { color: var(--gold-2); }
+.copy { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line-2); font-size: .8rem; color: var(--text-2); min-height: 40px; transition: border-color .3s, color .3s, background .3s; }
+.copy:hover { color: var(--text); border-color: var(--text-2); }
+.copy.done { color: var(--gold-2); border-color: var(--gold-line); background: var(--gold-dim); }
+.copy svg { width: 14px; height: 14px; }
+.footer { border-top: 1px solid var(--line); padding: 40px 0; }
+.footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px 32px; color: var(--muted); font-size: .9rem; }
+.footer-inner b { display: block; color: var(--text); font-family: var(--serif); font-weight: 500; font-size: 1.15rem; }
+.footer-links { display: flex; gap: 22px; }
+.footer-links a:hover { color: var(--text); }
+.to-top { position: fixed; right: 22px; bottom: 22px; width: 50px; height: 50px; border-radius: 50%; border: 1px solid var(--line-2); background: var(--surface); display: grid; place-items: center; z-index: 90; opacity: 0; transform: translateY(14px); pointer-events: none; transition: opacity .4s, transform .4s var(--ease-out), border-color .3s; }
+.to-top.show { opacity: 1; transform: none; pointer-events: auto; }
+.to-top:hover { border-color: var(--gold); }
+.to-top svg { width: 18px; height: 18px; stroke: var(--text); fill: none; stroke-width: 1.8; }
+
+/* ============================================================
+   14. MODAL — slide-in panel
+   ============================================================ */
+.modal { position: fixed; inset: 0; z-index: 300; visibility: hidden; }
+.modal.open { visibility: visible; }
+.modal-bg { position: absolute; inset: 0; background: var(--scrim); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); opacity: 0; transition: opacity .5s; }
+.modal.open .modal-bg { opacity: 1; }
+.panel { position: absolute; top: 0; right: 0; bottom: 0; width: min(1000px, 100%); background: var(--bg-2); border-left: 1px solid var(--line-2); overflow-y: auto; overscroll-behavior: contain; transform: translateX(100%); transition: transform .7s var(--ease-out); }
+.modal.open .panel { transform: none; }
+.panel-head { position: sticky; top: 0; z-index: 2; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px clamp(20px, 4vw, 48px); background: var(--nav-bg); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.panel-head .crumb { font-size: .86rem; color: var(--muted); }
+.panel-head .crumb b { color: var(--text); font-weight: 600; }
+.close { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line-2); display: grid; place-items: center; transition: transform .5s var(--ease-out), border-color .3s; }
+.close:hover { transform: rotate(90deg); border-color: var(--gold); }
+.close svg { width: 18px; height: 18px; stroke: var(--text); fill: none; stroke-width: 1.8; }
+.panel-body { padding: clamp(32px, 5vw, 64px) clamp(20px, 4vw, 48px) 100px; }
+.cs-top { margin-bottom: 44px; }
+.cs-top .cats { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+.cs-top h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(2.2rem, 5vw, 3.6rem); letter-spacing: -.02em; margin-bottom: 16px; }
+.cs-top .lead { max-width: 60ch; }
+.cs-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0; margin-top: 32px; border-top: 1px solid var(--line-2); border-left: 1px solid var(--line-2); }
+.cs-facts div { padding: 16px; border-right: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); }
+.cs-facts .k { color: var(--muted); font-size: .78rem; display: block; margin-bottom: 4px; }
+.cs-facts .v { font-weight: 600; font-size: .95rem; }
+.cs { display: grid; grid-template-columns: 210px 1fr; gap: 24px; padding: 36px 0; border-top: 1px solid var(--line); opacity: 0; transform: translateY(16px); animation: rise .7s var(--ease-out) forwards; animation-delay: calc(var(--i) * 80ms); }
+@keyframes rise { to { opacity: 1; transform: none; } }
+.cs .lab { position: sticky; top: 100px; align-self: start; }
+.cs .lab .n { font-family: var(--serif); font-style: italic; color: var(--gold-2); font-size: 1.1rem; display: block; margin-bottom: 4px; }
+.cs .lab h3 { font-family: var(--serif); font-size: 1.25rem; font-weight: 500; }
+.cs .body { color: var(--text-2); line-height: 1.65; }
+.cs .body p + p { margin-top: 14px; }
+.cs .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; }
+.cs .chk { display: flex; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line); color: var(--text); font-size: .95rem; }
+.cs .chk::before { content: "—"; color: var(--gold); flex: none; }
+.cs .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 20px; }
+.cs .cols h4 { font-size: .82rem; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+.cs .cols ul { display: flex; flex-wrap: wrap; gap: 6px; }
+.cs .impl div { display: grid; grid-template-columns: 170px 1fr; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
+.cs .impl b { color: var(--text); font-weight: 600; font-family: var(--serif); font-size: 1.05rem; }
+
+/* ============================================================
+   14b. SERVICES / PROCESS / FAQ / TIME ZONES / THEME
+   ============================================================ */
+.nav-actions { display: flex; align-items: center; gap: 10px; }
+.icon-btn { width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line-2); display: grid; place-items: center; color: var(--text-2); transition: border-color .3s, color .3s, transform .4s var(--ease-out); }
+.icon-btn:hover { color: var(--text); border-color: var(--gold); transform: rotate(-15deg); }
+.icon-btn svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.icon-btn .sun { display: none; } :root[data-theme="light"] .icon-btn .sun { display: block; } :root[data-theme="light"] .icon-btn .moon { display: none; }
+.nav-cv { display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; border: 1px solid var(--line-2); font-size: .88rem; font-weight: 600; color: var(--text); transition: border-color .3s, background .3s; }
+.nav-cv:hover { border-color: var(--gold); background: var(--gold-dim); }
+.nav-cv svg { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.avail { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px 8px 10px; border-radius: 999px; border: 1px solid var(--gold-line); background: var(--gold-dim); color: var(--gold-2); font-size: .84rem; font-weight: 600; margin-bottom: 22px; }
+.avail i { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 0 var(--gold-line); animation: halo 2.4s infinite; }
+@keyframes halo { 0% { box-shadow: 0 0 0 0 var(--gold-line); } 70% { box-shadow: 0 0 0 9px rgba(0,0,0,0); } 100% { box-shadow: 0 0 0 0 rgba(0,0,0,0); } }
+
+.services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: 56px; border-top: 1px solid var(--line-2); border-left: 1px solid var(--line-2); }
+.svc { padding: 34px 30px 36px; border-right: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); position: relative; overflow: hidden; transition: background .4s; }
+.svc::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--gold); transform: scaleX(0); transform-origin: left; transition: transform .6s var(--ease-out); }
+.svc:hover { background: var(--surface); }
+.svc:hover::after { transform: scaleX(1); }
+.svc .ic { width: 46px; height: 46px; border-radius: 12px; border: 1px solid var(--line-2); background: var(--bg-2); display: grid; place-items: center; margin-bottom: 22px; transition: transform .5s var(--ease-out), border-color .3s; }
+.svc:hover .ic { transform: translateY(-3px) rotate(-6deg); border-color: var(--gold-line); }
+.svc .ic svg { width: 22px; height: 22px; stroke: var(--gold-2); fill: none; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.svc h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 500; margin-bottom: 10px; }
+.svc p { color: var(--text-2); font-size: .95rem; line-height: 1.6; }
+.svc .ex { margin-top: 16px; font-size: .82rem; color: var(--muted); }
+.svc .ex b { color: var(--text-2); font-weight: 500; }
+
+.process { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; margin-top: 56px; position: relative; }
+.process::before { content: ""; position: absolute; left: 0; right: 0; top: 23px; height: 1px; background: var(--line-2); }
+.step { position: relative; padding-top: 64px; }
+.step .dot { position: absolute; top: 0; left: 0; width: 46px; height: 46px; border-radius: 50%; background: var(--bg); border: 1px solid var(--gold-line); display: grid; place-items: center; font-family: var(--serif); font-style: italic; color: var(--gold-2); font-size: 1.05rem; transition: background .4s, color .4s, transform .5s var(--ease-out); }
+.step:hover .dot { background: var(--gold); color: #1a1408; transform: scale(1.08); }
+.step h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 500; margin-bottom: 10px; }
+.step p { color: var(--text-2); font-size: .94rem; line-height: 1.6; }
+.step .out { margin-top: 12px; font-size: .82rem; color: var(--muted); }
+.step .out b { color: var(--gold-2); font-weight: 600; }
+
+.faq { max-width: 820px; margin: 48px auto 0; border-top: 1px solid var(--line-2); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 4px; font-family: var(--serif); font-size: 1.2rem; font-weight: 500; transition: color .3s; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary:hover { color: var(--gold-2); }
+.faq summary .pm { width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--line-2); display: grid; place-items: center; flex: none; position: relative; transition: transform .5s var(--ease-out), border-color .3s; }
+.faq summary .pm::before, .faq summary .pm::after { content: ""; position: absolute; background: currentColor; width: 12px; height: 1.5px; }
+.faq summary .pm::after { transform: rotate(90deg); transition: transform .4s var(--ease-out); }
+.faq details[open] summary .pm { border-color: var(--gold); transform: rotate(45deg); }
+.faq .ans { padding: 0 4px 24px; color: var(--text-2); max-width: 66ch; line-height: 1.65; }
+
+.tz { max-width: 720px; margin: 56px auto 0; text-align: left; }
+.tz-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 14px; }
+.tz-head h3 { font-family: var(--serif); font-weight: 500; font-size: 1.3rem; }
+.tz-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--line-2); border-radius: 16px; overflow: hidden; }
+.tz-grid > div { padding: 18px 16px; border-right: 1px solid var(--line-2); background: var(--surface); }
+.tz-grid > div:last-child { border-right: 0; }
+.tz-grid > div.me { background: var(--gold-dim); }
+.tz-grid .c { font-size: .8rem; color: var(--muted); }
+.tz-grid .t { font-family: var(--serif); font-size: 1.7rem; font-weight: 300; margin-top: 4px; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.tz-grid .o { font-size: .76rem; color: var(--muted); margin-top: 2px; }
+.tz-grid div.me .t { color: var(--gold-2); }
+.tz-note { margin-top: 12px; font-size: .86rem; color: var(--muted); }
+
+@media (max-width: 1024px) {
+  .services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .process { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 28px; }
+  .process::before { display: none; }
+}
+@media (max-width: 768px) {
+  .nav-cv { display: none; }
+  .services { grid-template-columns: 1fr; }
+  .svc { padding: 26px 22px 28px; }
+  .process { grid-template-columns: 1fr; }
+  .tz-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .tz-grid > div:nth-child(2) { border-right: 0; }
+  .tz-grid > div:nth-child(-n+2) { border-bottom: 1px solid var(--line-2); }
+  .faq summary { font-size: 1.05rem; }
+}
+
+/* ============================================================
+   15. MOTION PREFERENCES & PRINT
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+  .intro { display: none; }
+  .split .w > span, .rv { transform: none; opacity: 1; }
+  .line-rv::after { transform: none; }
+  .draw { stroke-dashoffset: 0; }
+  .grain, .spot, .ping { display: none; }
+  .ticker-track { animation: none; }
+}
+@media print {
+  .nav, .to-top, .modal, .skip-link, .copy, .grain, .spot, .intro, .ticker, .hero-bg, .scroll-cue, .cform, .tz { display: none !important; }
+  .faq details { open: true; } .faq .ans { display: block; }
+  body { background: #fff; color: #111; font-size: 11pt; }
+  .section { padding: 24px 0; }
+  .rv, .split .w > span { opacity: 1; transform: none; }
+  .case { grid-template-columns: 1fr; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .85em; color: #555; }
+}
+
+/* ============================================================
+   16. RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .about-grid, .arch { grid-template-columns: 1fr; }
+  .about-side, .arch-copy { position: static; }
+  .exp-card { grid-template-columns: 1fr; gap: 32px; }
+  .case { grid-template-columns: 1fr; gap: 28px; }
+  .case.rev .case-vis { order: 0; }
+  .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hero-bottom { grid-template-columns: 1fr; }
+  .nav-time { display: none; }
+}
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .nav { height: 72px; }
+  .nav-links { display: none; }
+  .burger { display: grid; }
+  .nav.open .nav-links { display: flex; flex-direction: column; align-items: stretch; gap: 0; position: absolute; top: 72px; left: 0; right: 0; padding: 8px var(--gutter) 20px; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .nav.open .nav-links a { padding: 14px 4px; font-size: 1.15rem; font-family: var(--serif); border-bottom: 1px solid var(--line); }
+  .nav.open .nav-links a::after { display: none; }
+  .hero { padding: 110px 0 70px; min-height: 0; }
+  .hero-top { flex-direction: column; gap: 10px; margin-bottom: 36px; }
+  .hero-loc { text-align: left; }
+  .display { font-size: clamp(3rem, 15vw, 4.6rem); }
+  .hero-stats { grid-template-columns: 1fr 1fr 1fr; }
+  .stat { padding-right: 10px; }
+  .stat + .stat { padding-left: 12px; }
+  .stat .n { font-size: 1.7rem; }
+  .stat .l { font-size: .76rem; }
+  .hero-actions .btn { flex: 1 1 100%; }
+  .scroll-cue { display: none; }
+  .exp-head { grid-template-columns: 1fr; }
+  .exp-items li { grid-template-columns: 40px 1fr; }
+  .facts div { grid-template-columns: 1fr; gap: 4px; }
+  .skills { grid-template-columns: 1fr; gap: 32px; }
+  .contact-rows div { grid-template-columns: 1fr; gap: 6px; }
+  .cform-foot .btn { width: 100%; }
+  .cform-alt .btn { width: 100%; }
+  .cs { grid-template-columns: 1fr; gap: 12px; }
+  .cs .lab { position: static; }
+  .cs .grid2 { grid-template-columns: 1fr; }
+  .cs .impl div { grid-template-columns: 1fr; gap: 4px; }
+  .panel { border-left: 0; }
+  .spot { display: none; }
+}
+@media (max-width: 480px) {
+  .hero-stats { grid-template-columns: 1fr; border-top: 0; }
+  .stat { border-right: 0; border-top: 1px solid var(--line); padding: 14px 0 !important; display: flex; align-items: baseline; gap: 14px; }
+  .stat .l { margin: 0; }
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+  .flow .node { padding: 8px 12px; font-size: .84rem; }
+  .flow .edge { width: 16px; }
+}
+</style>
+<noscript><style>.intro{display:none}.rv,.split .w>span{opacity:1!important;transform:none!important}body.locked{overflow:auto}.stat .n::after{content:attr(data-count) attr(data-suffix)}.stat .n{font-size:0}.stat .n::after{font-size:clamp(1.9rem,3.4vw,3rem)}</style></noscript>
+<script>try{var t=localStorage.getItem('theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="spot" id="spot" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-inner">
+    <div class="intro-name"><span>Abdullah Amanat Ali</span></div>
+    <div class="intro-bar"></div>
+    <div class="intro-sub">Flutter · Business software · AI</div>
+  </div>
+</div>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="#home" aria-label="Abdullah Amanat Ali — home">Abdullah <i>A.</i> Ali</a>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="#home" data-nav>Home</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#services" data-nav>Services</a>
+      <a href="#experience" data-nav>Experience</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#skills" data-nav>Skills</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="nav-time" aria-live="off"><i></i><span>Sialkot</span><span id="clock">--:--</span><span>PKT</span></div>
+      <a class="nav-cv" id="cv-link" href="#" download="Abdullah_Amanat_Ali_CV.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>CV</a>
+      <button type="button" class="icon-btn" id="theme-btn" aria-label="Switch to light theme" aria-pressed="false"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    </div>
+    <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="glow"></div>
+    <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+  </div>
+  <div class="container">
+    <div class="hero-top">
+      <p class="hero-role rv"><b>Flutter Developer</b> — AI &amp; Business Software Developer</p>
+      <p class="hero-loc rv" style="--d:120ms">Sialkot, Pakistan<br>PKT (UTC+5) · Remote-ready</p>
+    </div>
+    <p class="avail rv" style="--d:60ms"><i></i>Available for new projects and roles</p>
+    <h1 class="display split hero-name" id="hero-title" data-split>Abdullah <em>Amanat</em> Ali</h1>
+    <div class="hero-bottom">
+      <div>
+        <p class="lead rv" style="--d:500ms">I build production mobile applications for workforce management, GPS tracking, order dispatch and AI voice automation — shipped on Android and iOS, and maintained in the field.</p>
+        <div class="hero-actions rv" style="--d:650ms">
+          <a class="btn btn-gold" href="#projects" data-magnet>View my work <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-line" href="#contact" data-magnet>Contact me</a>
+          <a class="btn btn-line" href="#" data-cv download="Abdullah_Amanat_Ali_CV.pdf" data-magnet><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download CV</a>
+        </div>
+      </div>
+      <div class="hero-stats rv" style="--d:800ms" role="group" aria-label="Quick facts">
+        <div class="stat"><div class="n" data-count="1.5" data-suffix="+">0</div><div class="l">years of production experience</div></div>
+        <div class="stat"><div class="n" data-count="30" data-suffix="+">0</div><div class="l">client companies on GPS Workforce Monitor</div></div>
+        <div class="stat"><div class="n" data-count="3">0</div><div class="l">business apps live on Android &amp; iOS</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><i></i>Scroll</div>
+</section>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="ticker">
+    <span>Flutter</span><span>Dart</span><span>GPS &amp; background location</span><span>MQTT real-time sync</span><span>Firebase</span><span>Oracle ORDS / APEX</span><span>Kotlin &amp; Swift</span><span>SQLite offline queues</span><span>Gemini Live</span><span>Voice AI</span><span>Workforce systems</span><span>Order &amp; dispatch</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <p class="eyebrow rv">About</p>
+      <h2 class="h2 rv" id="about-title" style="--d:80ms">Practical software for <em>teams that work</em> in the field.</h2>
+      <p class="lead rv" style="--d:160ms">I'm a Flutter/Dart developer at MetaXperts, working on business applications that companies rely on every day: employee attendance, GPS workforce tracking, shop visits, order management and dispatch.</p>
+      <p class="rv" style="--d:240ms;color:var(--text-2)">Most of my work sits below the UI — background location that survives OS-level termination, MQTT real-time sync, offline queues that retry over poor connectivity, native Kotlin and Swift modules, and Firebase and Oracle ORDS/APEX integration. I also build with AI: my Jarvis assistant combines Gemini Live, multi-provider fallback, wake-word detection and on-device app automation.</p>
+      <p class="quote rv" style="--d:320ms">I care about software that keeps working after release — I own Android and iOS build, release and maintenance for the apps I ship.</p>
+    </div>
+    <dl class="facts about-side rv" style="--d:200ms">
+      <div><dt>Role</dt><dd>Flutter Developer, MetaXperts</dd></div>
+      <div><dt>Focus</dt><dd>Mobile · Business software · Workforce systems · GPS · APIs · Real-time · AI · Voice automation</dd></div>
+      <div><dt>Platforms</dt><dd>Android &amp; iOS (Flutter), Kotlin and Swift native modules</dd></div>
+      <div><dt>Backends</dt><dd>REST APIs, Firebase, Oracle ORDS / APEX, MQTT</dd></div>
+      <div><dt>Location</dt><dd>Sialkot, Pakistan — open to remote and international work</dd></div>
+      <div><dt>Education</dt><dd>BS Computer Science, Virtual University of Pakistan (in progress)</dd></div>
+      <div><dt>Languages</dt><dd>English · Urdu · Punjabi</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services" aria-labelledby="services-title" style="background:var(--bg-2)">
+  <div class="container">
+    <p class="eyebrow rv">Services</p>
+    <h2 class="h2 rv" id="services-title" style="--d:80ms">What I can <em>build for you</em></h2>
+    <p class="lead rv" style="--d:160ms;margin-top:20px;max-width:52ch">For companies in Pakistan, the UAE and abroad — from a first Android release to a field-force system used every day.</p>
+    <div class="services">
+      <div class="svc rv"><span class="ic"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/></svg></span><h3>Flutter mobile apps</h3><p>Cross-platform Android and iOS applications from one codebase, with native Kotlin and Swift modules where the platform needs them.</p><p class="ex"><b>Delivered:</b> three production apps, Android &amp; iOS</p></div>
+      <div class="svc rv" style="--d:60ms"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s7-6 7-12a7 7 0 0 0-14 0c0 6 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><h3>Workforce &amp; GPS tracking</h3><p>Attendance, shifts, selfie verification, geofences and background location that keeps reporting after reboots and process kills.</p><p class="ex"><b>Example:</b> GPS Workforce Monitor, 30+ client companies</p></div>
+      <div class="svc rv" style="--d:120ms"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 7h13l4 4v6H3z"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M16 7v4h4"/></svg></span><h3>Order &amp; dispatch systems</h3><p>Shop visits, order capture with photos, dispatch and backend sync for field sales and distribution teams.</p><p class="ex"><b>Example:</b> Book &amp; Dispatch, Ruby Form</p></div>
+      <div class="svc rv" style="--d:180ms"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 0 1 4 4v2a4 4 0 0 1-8 0V7a4 4 0 0 1 4-4z"/><path d="M5 10a7 7 0 0 0 14 0M12 17v4M8 21h8"/></svg></span><h3>AI &amp; voice assistants</h3><p>Real-time voice conversation, wake-word activation, multi-provider AI with fallback, memory and on-device automation.</p><p class="ex"><b>Example:</b> Jarvis on Gemini Live</p></div>
+      <div class="svc rv" style="--d:240ms"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h6M14 12h6M10 6l4 6-4 6"/><circle cx="4" cy="12" r="1.5"/><circle cx="20" cy="12" r="1.5"/></svg></span><h3>API &amp; backend integration</h3><p>REST, Firebase and Oracle ORDS/APEX integration, MQTT real-time sync and offline queues that retry over poor connectivity.</p><p class="ex"><b>Stack:</b> REST · Firebase · Oracle · MQTT · SQLite</p></div>
+      <div class="svc rv" style="--d:300ms"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg></span><h3>Release &amp; maintenance</h3><p>Android and iOS build and release, crash monitoring, security hardening and ongoing maintenance after launch.</p><p class="ex"><b>Includes:</b> Crashlytics · Play Integrity · single-device login</p></div>
+    </div>
+
+    <div style="margin-top:clamp(72px,9vw,120px)">
+      <p class="eyebrow rv">How I work</p>
+      <h2 class="h2 rv" style="--d:80ms">A clear process, <em>start to launch</em></h2>
+      <div class="process">
+        <div class="step rv"><span class="dot">i</span><h3>Discovery</h3><p>A call or written brief to understand the business workflow, the users in the field, and the platforms you need.</p><p class="out"><b>You get</b> a scoped plan and honest estimate</p></div>
+        <div class="step rv" style="--d:80ms"><span class="dot">ii</span><h3>Design &amp; architecture</h3><p>Screens and data flow agreed up front, including offline behaviour, API contracts and native requirements.</p><p class="out"><b>You get</b> a plan you can review before code</p></div>
+        <div class="step rv" style="--d:160ms"><span class="dot">iii</span><h3>Build &amp; test</h3><p>Iterative builds you can install and try on real devices, with regular updates and feedback rounds.</p><p class="out"><b>You get</b> working builds throughout</p></div>
+        <div class="step rv" style="--d:240ms"><span class="dot">iv</span><h3>Release &amp; maintain</h3><p>Android and iOS release, crash monitoring and continued maintenance so the app keeps working after launch.</p><p class="out"><b>You get</b> a live app and ongoing support</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" id="experience" aria-labelledby="exp-title">
+  <div class="container">
+    <div class="exp-head">
+      <div><p class="eyebrow rv">Experience</p><h2 class="h2 rv" id="exp-title" style="--d:80ms">Where I <em>work</em></h2></div>
+      <p class="muted small rv" style="--d:160ms">Full-time · since January 2025</p>
+    </div>
+    <div class="exp-card rv" style="--d:200ms">
+      <aside>
+        <div class="exp-co">MetaXperts</div>
+        <div class="exp-when">Jan 2025 – Present</div>
+        <div class="exp-where">Sialkot, Pakistan</div>
+        <p class="exp-desc">Software company building AI-powered applications, mobile and web solutions, Oracle APEX business systems, and SEO and digital services.</p>
+      </aside>
+      <div>
+        <h3 class="exp-role">Flutter Developer</h3>
+        <p class="exp-sub">Cross-platform mobile applications for Android and iOS</p>
+        <ul class="exp-items">
+          <li><span class="k">i</span><span><b>Built and maintain GPS Workforce Monitor</b>, a cross-platform workforce-tracking platform used by 30+ client companies to manage field employees — real-time GPS tracking, location history and playback, geofence validation (circle, rectangle, polygon), shift management, selfie attendance and automatic clock-out.</span></li>
+          <li><span class="k">ii</span><span><b>Engineered background location tracking</b> with native Kotlin (Android) and Swift (iOS) modules — foreground services, boot-completed handling and WakeLock — including process-kill recovery so tracking survives reboots and OS termination.</span></li>
+          <li><span class="k">iii</span><span><b>Implemented MQTT (Paho) real-time sync</b> with Oracle ORDS / APEX REST APIs, plus an offline data queue with automatic retry to guarantee delivery over unreliable field connectivity.</span></li>
+          <li><span class="k">iv</span><span><b>Hardened security and reliability</b> through single-device login enforcement, automatic time-sync validation, Play Integrity API and Firebase Crashlytics monitoring.</span></li>
+          <li><span class="k">v</span><span><b>Shipped two further field-force apps</b> — Book &amp; Dispatch and Ruby Form (live across Pakistan and Dubai) — owning Android and iOS build, release and maintenance.</span></li>
+          <li><span class="k">vi</span><span><b>Integrated Firebase</b> Auth, Firestore, Cloud Storage, FCM and Remote Config with secure token-based auth flows; collaborated with backend teams to optimise REST APIs, applying GetX with MVVM + Repository architecture.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="proj-head">
+      <p class="eyebrow rv">Projects</p>
+      <h2 class="h2 rv" id="projects-title" style="--d:80ms">Real applications, <em>in production</em></h2>
+      <p class="lead rv" style="--d:160ms;margin-top:20px">Three business apps built and maintained at MetaXperts, and one advanced personal AI project. Open any of them for the full case study.</p>
+    </div>
+
+    <!-- 01 GPS -->
+    <article class="case rv" aria-labelledby="c-gps">
+      <div class="case-vis" data-tilt>
+        <div class="frame">
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <g stroke="rgba(243,238,230,.05)"><path d="M0 60H400M0 120H400M0 180H400M0 240H400M60 0V300M120 0V300M180 0V300M240 0V300M300 0V300M360 0V300"/></g>
+            <g fill="none" stroke="rgba(243,238,230,.1)" stroke-width="8" stroke-linecap="round"><path d="M-10 210H150V90H320"/><path d="M230 -10V310"/><path d="M280 250H410"/></g>
+            <rect x="200" y="50" width="150" height="120" rx="14" fill="none" stroke="var(--gold)" stroke-opacity=".55" stroke-width="1.5" class="dash"/>
+            <path class="draw" d="M40 250 L110 250 L110 150 L190 150 L190 110 L270 110 L270 200 L340 200" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <g fill="var(--bg)" stroke="var(--gold-2)" stroke-width="2"><circle cx="40" cy="250" r="6"/><circle cx="190" cy="150" r="6"/><circle cx="270" cy="110" r="6"/></g>
+            <circle class="ping" cx="340" cy="200" r="10" fill="none" stroke="var(--gold)" stroke-width="1.5"/>
+            <circle cx="340" cy="200" r="6" fill="var(--gold-2)"/>
+            <g class="float"><rect x="24" y="24" width="128" height="40" rx="10" fill="var(--bg)" stroke="var(--line-2)"/><circle cx="44" cy="44" r="5" fill="var(--gold)"/><text x="58" y="41" font-size="10" fill="var(--text)" font-family="Instrument Sans,sans-serif" font-weight="600">Clock in</text><text x="58" y="54" font-size="8.5" fill="var(--muted)" font-family="Instrument Sans,sans-serif">Selfie verified · 08:02</text></g>
+          </svg>
+          <div class="lbl"><span>Live tracking</span><span>Geofence</span><span>Playback</span></div>
+        </div>
+      </div>
+      <div>
+        <span class="case-idx">No. 01</span>
+        <h3 class="h3" id="c-gps">GPS Workforce Monitor</h3>
+        <div class="case-cats"><span class="chip gold">Workforce management</span><span class="chip">GPS tracking</span><span class="chip">Attendance</span><span class="chip">Field operations</span></div>
+        <p class="desc">Cross-platform platform for managing field employees — clock in/out, background GPS tracking with process-kill recovery, location playback, geofence validation, shifts and selfie attendance. Used by 30+ client companies.</p>
+        <p class="case-stack"><b>Stack</b> — Flutter, GetX, Firebase, SQLite, MQTT/Paho, Oracle ORDS/APEX, Kotlin, Swift</p>
+        <button type="button" class="case-open" data-project="gps" aria-haspopup="dialog" aria-label="Open case study: GPS Workforce Monitor"><span class="arr"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span>Read the case study</button>
+      </div>
+    </article>
+
+    <!-- 02 Book & Dispatch -->
+    <article class="case rev rv" aria-labelledby="c-dispatch">
+      <div class="case-vis" data-tilt>
+        <div class="frame">
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5 0 10z" fill="var(--gold)"/></marker></defs>
+            <g font-family="Instrument Sans,sans-serif" font-size="11" font-weight="600" fill="var(--text)">
+              <g class="float" style="animation-delay:0s"><rect x="30" y="40" width="130" height="46" rx="10" fill="var(--bg)" stroke="var(--line-2)"/><text x="46" y="60">Shop visit</text><text x="46" y="75" font-size="9" font-weight="500" fill="var(--muted)">Location · info · photos</text></g>
+              <g class="float" style="animation-delay:.6s"><rect x="240" y="40" width="130" height="46" rx="10" fill="var(--bg)" stroke="var(--line-2)"/><text x="256" y="60">Order</text><text x="256" y="75" font-size="9" font-weight="500" fill="var(--muted)">Create · manage</text></g>
+              <g class="float" style="animation-delay:1.2s"><rect x="240" y="150" width="130" height="46" rx="10" fill="var(--gold-dim)" stroke="var(--gold-line)"/><text x="256" y="170" fill="var(--gold-2)">Dispatch</text><text x="256" y="185" font-size="9" font-weight="500" fill="var(--muted)">Assign · release</text></g>
+              <g class="float" style="animation-delay:1.8s"><rect x="30" y="150" width="130" height="46" rx="10" fill="var(--bg)" stroke="var(--line-2)"/><text x="46" y="170">Backend sync</text><text x="46" y="185" font-size="9" font-weight="500" fill="var(--muted)">REST · Firebase</text></g>
+            </g>
+            <g fill="none" stroke="var(--gold)" stroke-width="1.5" class="dash" marker-end="url(#ah)"><path d="M160 63H236"/><path d="M305 86V146"/><path d="M240 173H164"/></g>
+            <g font-family="Instrument Sans,sans-serif" font-size="10" fill="var(--muted)"><text x="30" y="245">Field employee</text><text x="30" y="262" font-size="8.5">Android &amp; iOS · camera photo capture</text></g>
+            <g stroke="var(--line-2)" fill="var(--bg-2)"><rect x="300" y="225" width="70" height="44" rx="8"/></g>
+            <g class="bar" fill="var(--gold)"><rect x="312" y="240" width="5" height="22" rx="2" style="animation-delay:0s"/><rect x="322" y="240" width="5" height="22" rx="2" style="animation-delay:.2s"/><rect x="332" y="240" width="5" height="22" rx="2" style="animation-delay:.4s"/><rect x="342" y="240" width="5" height="22" rx="2" style="animation-delay:.6s"/><rect x="352" y="240" width="5" height="22" rx="2" style="animation-delay:.8s"/></g>
+          </svg>
+          <div class="lbl"><span>Orders</span><span>Dispatch</span><span>Sync</span></div>
+        </div>
+      </div>
+      <div>
+        <span class="case-idx">No. 02</span>
+        <h3 class="h3" id="c-dispatch">Book &amp; Dispatch</h3>
+        <div class="case-cats"><span class="chip gold">Order management</span><span class="chip">Dispatch</span><span class="chip">Shop visits</span><span class="chip">Field sales</span></div>
+        <p class="desc">Order and dispatch management for field teams: shop visits, shop information and photo capture, order management, dispatch and backend sync.</p>
+        <p class="case-stack"><b>Stack</b> — Flutter, Dart, REST APIs, Firebase, camera/photo capture, Android &amp; iOS release</p>
+        <button type="button" class="case-open" data-project="dispatch" aria-haspopup="dialog" aria-label="Open case study: Book and Dispatch"><span class="arr"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span>Read the case study</button>
+      </div>
+    </article>
+
+    <!-- 03 Jarvis -->
+    <article class="case rv" aria-labelledby="c-jarvis">
+      <div class="case-vis" data-tilt>
+        <div class="frame">
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <circle cx="200" cy="150" r="110" fill="none" stroke="rgba(227,178,90,.12)"/>
+            <circle cx="200" cy="150" r="72" fill="none" stroke="rgba(227,178,90,.2)" stroke-dasharray="3 6"/>
+            <circle class="ping" cx="200" cy="150" r="30" fill="none" stroke="var(--gold)"/>
+            <circle cx="200" cy="150" r="30" fill="var(--gold-dim)" stroke="var(--gold-line)"/>
+            <g class="bar" fill="var(--gold-2)"><rect x="184" y="136" width="4" height="28" rx="2" style="animation-delay:0s"/><rect x="192" y="136" width="4" height="28" rx="2" style="animation-delay:.15s"/><rect x="200" y="136" width="4" height="28" rx="2" style="animation-delay:.3s"/><rect x="208" y="136" width="4" height="28" rx="2" style="animation-delay:.45s"/></g>
+            <g class="orbit"><circle cx="200" cy="40" r="4" fill="var(--gold)"/></g>
+            <g font-family="Instrument Sans,sans-serif" font-size="10" font-weight="600" fill="var(--text)">
+              <g><rect x="24" y="30" width="86" height="26" rx="13" fill="var(--bg)" stroke="var(--line-2)"/><text x="40" y="47">Gemini Live</text></g>
+              <g><rect x="300" y="46" width="72" height="26" rx="13" fill="var(--bg)" stroke="var(--line-2)"/><text x="316" y="63">Groq</text></g>
+              <g><rect x="24" y="238" width="96" height="26" rx="13" fill="var(--bg)" stroke="var(--line-2)"/><text x="40" y="255">OpenRouter</text></g>
+              <g><rect x="292" y="232" width="86" height="26" rx="13" fill="var(--bg)" stroke="var(--line-2)"/><text x="308" y="249">Edge TTS</text></g>
+            </g>
+            <g fill="none" stroke="var(--line-2)" stroke-width="1"><path d="M110 43C150 60 160 100 178 128"/><path d="M300 59C260 70 240 110 222 128"/><path d="M120 251C150 230 160 200 180 175"/><path d="M292 245C260 230 240 200 222 175"/></g>
+            <g font-family="Fraunces,Georgia,serif" font-style="italic" font-size="13" fill="var(--text-2)"><text x="200" y="215" text-anchor="middle">"Hey Jarvis"</text></g>
+          </svg>
+          <div class="lbl"><span>Wake-word</span><span>Barge-in</span><span>Memory</span></div>
+        </div>
+      </div>
+      <div>
+        <span class="case-idx">No. 03</span>
+        <h3 class="h3" id="c-jarvis">Jarvis AI Assistant</h3>
+        <div class="case-cats"><span class="chip gold">Voice AI</span><span class="chip">Automation</span><span class="chip">Mobile AI</span><span class="chip">Personal project</span></div>
+        <p class="desc">Android voice assistant with Gemini Live real-time, interruptible conversation, offline "Hey Jarvis" wake-word, remember/recall memory, multi-provider AI fallback and voice-driven app automation.</p>
+        <p class="case-stack"><b>Stack</b> — Flutter, Gemini Live API, Groq, OpenRouter, Qwen, Pollinations, Edge TTS, wake-word engine</p>
+        <button type="button" class="case-open" data-project="jarvis" aria-haspopup="dialog" aria-label="Open case study: Jarvis AI Assistant"><span class="arr"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span>Read the case study</button>
+      </div>
+    </article>
+
+    <!-- 04 Ruby Form -->
+    <article class="case rev rv" aria-labelledby="c-ruby">
+      <div class="case-vis" data-tilt>
+        <div class="frame">
+          <svg viewBox="0 0 400 300" aria-hidden="true">
+            <g font-family="Instrument Sans,sans-serif" font-size="10" font-weight="600">
+              <rect x="24" y="26" width="76" height="24" rx="12" fill="var(--gold-dim)" stroke="var(--gold-line)"/><text x="40" y="42" fill="var(--gold-2)">Pakistan</text>
+              <rect x="108" y="26" width="62" height="24" rx="12" fill="var(--gold-dim)" stroke="var(--gold-line)"/><text x="124" y="42" fill="var(--gold-2)">Dubai</text>
+            </g>
+            <path class="draw" d="M40 150 H360" fill="none" stroke="var(--gold)" stroke-width="2" stroke-linecap="round"/>
+            <g fill="var(--bg)" stroke="var(--gold-2)" stroke-width="2"><circle cx="40" cy="150" r="7"/><circle cx="120" cy="150" r="7"/><circle cx="200" cy="150" r="7"/><circle cx="280" cy="150" r="7"/><circle cx="360" cy="150" r="7"/></g>
+            <circle class="ping" cx="200" cy="150" r="9" fill="none" stroke="var(--gold)" stroke-width="1.5"/>
+            <g font-family="Instrument Sans,sans-serif" font-size="9.5" fill="var(--text-2)" text-anchor="middle">
+              <text x="40" y="178">Clock in</text><text x="120" y="178">Shop visits</text><text x="200" y="178">Field activity</text><text x="280" y="178">Orders</text><text x="360" y="178">Clock out</text>
+            </g>
+            <g font-family="Instrument Sans,sans-serif" font-size="8.5" fill="var(--muted)" text-anchor="middle"><text x="40" y="126">start</text><text x="360" y="126">end of day</text></g>
+            <g class="float"><rect x="150" y="212" width="100" height="40" rx="10" fill="var(--bg)" stroke="var(--line-2)"/><text x="200" y="229" font-family="Instrument Sans,sans-serif" font-size="10" font-weight="600" fill="var(--text)" text-anchor="middle">One app</text><text x="200" y="242" font-family="Instrument Sans,sans-serif" font-size="8.5" fill="var(--muted)" text-anchor="middle">for the whole working day</text></g>
+          </svg>
+          <div class="lbl"><span>Attendance</span><span>Shops</span><span>Orders</span></div>
+        </div>
+      </div>
+      <div>
+        <span class="case-idx">No. 04</span>
+        <h3 class="h3" id="c-ruby">Ruby Form</h3>
+        <div class="case-cats"><span class="chip gold">International field force</span><span class="chip">Attendance</span><span class="chip">Orders</span><span class="chip">Shop operations</span></div>
+        <p class="desc">Field-force application live across Pakistan and Dubai covering a full working day: clock in, shop visits, field activities, order management and clock out.</p>
+        <p class="case-stack"><b>Stack</b> — Flutter, Dart, REST APIs, JSON, Android &amp; iOS build/release</p>
+        <button type="button" class="case-open" data-project="ruby" aria-haspopup="dialog" aria-label="Open case study: Ruby Form"><span class="arr"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></svg></span>Read the case study</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="section" id="stack" aria-labelledby="stack-title" style="background:var(--bg-2)">
+  <div class="container arch">
+    <div class="arch-copy">
+      <p class="eyebrow rv">Technical depth</p>
+      <h2 class="h2 rv" id="stack-title" style="--d:80ms">Beyond the <em>UI layer</em></h2>
+      <p class="lead rv" style="--d:160ms;margin-top:22px">Every app I ship spans the full mobile stack. The UI is the smallest part — the work is in the layers underneath it.</p>
+      <ul class="arch-list rv" style="--d:240ms">
+        <li><span>i</span><span>Background tracking that survives reboots and process kills</span></li>
+        <li><span>ii</span><span>Real-time MQTT sync with offline retry queues</span></li>
+        <li><span>iii</span><span>Native Kotlin and Swift modules where Flutter alone isn't enough</span></li>
+        <li><span>iv</span><span>Multi-provider AI orchestration with voice in and out</span></li>
+      </ul>
+    </div>
+    <div class="arch-vis rv" style="--d:200ms" id="arch">
+      <svg viewBox="0 0 560 640" aria-hidden="true"><defs><linearGradient id="wg" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="var(--gold)" stop-opacity="0"/><stop offset=".5" stop-color="var(--gold)"/><stop offset="1" stop-color="var(--gold)" stop-opacity="0"/></linearGradient></defs><path d="M280 72V496" stroke="var(--line-2)" stroke-width="1.2" fill="none"/><path d="M280 72V496" stroke="url(#wg)" stroke-width="2" fill="none" stroke-dasharray="80 344"><animate attributeName="stroke-dashoffset" from="0" to="-424" dur="3s" repeatCount="indefinite"/></path><circle class="pulse" r="4"><animateMotion dur="3.2s" repeatCount="indefinite" path="M280 72V496"/></circle><g><rect class="box top" x="40" y="16" width="480" height="56" rx="12"/><text x="64" y="40">Flutter</text><text class="sub" x="64" y="58">Cross-platform UI · Android &amp; iOS build and release</text><text class="sub" x="496" y="40" text-anchor="end" fill="var(--gold-2)">Flutter · Dart</text></g><g><rect class="box" x="40" y="96" width="480" height="56" rx="12"/><text x="64" y="120">Application logic</text><text class="sub" x="64" y="138">State, architecture and business workflows</text><text class="sub" x="496" y="120" text-anchor="end" fill="var(--gold-2)">GetX · MVVM + Repository</text></g><g><rect class="box" x="40" y="176" width="480" height="56" rx="12"/><text x="64" y="200">APIs &amp; Firebase</text><text class="sub" x="64" y="218">REST · Oracle ORDS / APEX · Auth · FCM · Remote Config · Crashlytics</text><text class="sub" x="496" y="200" text-anchor="end" fill="var(--gold-2)">Backend</text></g><g><rect class="box" x="40" y="256" width="480" height="56" rx="12"/><text x="64" y="280">Local database</text><text class="sub" x="64" y="298">Offline-first storage with retry queues</text><text class="sub" x="496" y="280" text-anchor="end" fill="var(--gold-2)">SQLite · sqflite</text></g><g><rect class="box" x="40" y="336" width="480" height="56" rx="12"/><text x="64" y="360">Real-time communication</text><text class="sub" x="64" y="378">Live location and event sync</text><text class="sub" x="496" y="360" text-anchor="end" fill="var(--gold-2)">MQTT · Paho · Push</text></g><g><rect class="box" x="40" y="416" width="480" height="56" rx="12"/><text x="64" y="440">Native Android &amp; iOS</text><text class="sub" x="64" y="458">Foreground services · boot receivers · WakeLock · Play Integrity</text><text class="sub" x="496" y="440" text-anchor="end" fill="var(--gold-2)">Kotlin · Swift</text></g><g><rect class="box top" x="40" y="496" width="480" height="56" rx="12"/><text x="64" y="520">AI &amp; automation</text><text class="sub" x="64" y="538">Gemini Live · Groq · OpenRouter · Qwen · Pollinations · Edge TTS</text><text class="sub" x="496" y="520" text-anchor="end" fill="var(--gold-2)">Voice · wake-word</text></g><path d="M40 588H520" stroke="var(--line-2)" stroke-dasharray="3 5"/><g font-family="Instrument Sans,sans-serif" font-size="11" fill="var(--muted)"><text x="40" y="608">Device</text><text x="520" y="608" text-anchor="end">Backend / AI providers</text></g></svg>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills" aria-labelledby="skills-title">
+  <div class="container">
+    <p class="eyebrow rv">Skills</p>
+    <h2 class="h2 rv" id="skills-title" style="--d:80ms">Technical <em>expertise</em></h2>
+    <p class="lead rv" style="--d:160ms;margin-top:20px;max-width:50ch">Grouped by where each tool sits in the stack. Everything listed here has been used in shipped work.</p>
+    <div class="skills">
+      <div class="sk rv"><h3>Mobile <small>8</small></h3><ul><li class="chip">Flutter</li><li class="chip">Dart</li><li class="chip">Android</li><li class="chip">iOS</li><li class="chip">Kotlin</li><li class="chip">Swift</li><li class="chip">WebView</li><li class="chip">Git</li></ul></div>
+      <div class="sk rv" style="--d:60ms"><h3>Architecture <small>3</small></h3><ul><li class="chip">GetX</li><li class="chip">MVVM</li><li class="chip">Repository pattern</li></ul></div>
+      <div class="sk rv" style="--d:120ms"><h3>Backend &amp; APIs <small>6</small></h3><ul><li class="chip">REST APIs</li><li class="chip">API integration</li><li class="chip">JSON</li><li class="chip">Oracle ORDS</li><li class="chip">Oracle APEX</li><li class="chip">Token-based auth</li></ul></div>
+      <div class="sk rv" style="--d:180ms"><h3>Firebase <small>6</small></h3><ul><li class="chip">Authentication</li><li class="chip">Cloud Firestore</li><li class="chip">Cloud Storage</li><li class="chip">Cloud Messaging</li><li class="chip">Remote Config</li><li class="chip">Crashlytics</li></ul></div>
+      <div class="sk rv" style="--d:240ms"><h3>Database &amp; offline <small>4</small></h3><ul><li class="chip">SQLite</li><li class="chip">sqflite</li><li class="chip">SharedPreferences</li><li class="chip">Offline sync &amp; retry queues</li></ul></div>
+      <div class="sk rv" style="--d:300ms"><h3>Real-time &amp; location <small>7</small></h3><ul><li class="chip">MQTT</li><li class="chip">Paho</li><li class="chip">GPS</li><li class="chip">Background location</li><li class="chip">Background services</li><li class="chip">Boot receivers</li><li class="chip">WakeLock</li></ul></div>
+      <div class="sk rv" style="--d:360ms"><h3>AI &amp; automation <small>11</small></h3><ul><li class="chip">Gemini Live API</li><li class="chip">Groq</li><li class="chip">OpenRouter</li><li class="chip">Qwen</li><li class="chip">Pollinations</li><li class="chip">Edge TTS</li><li class="chip">Voice AI</li><li class="chip">Wake-word detection</li><li class="chip">Google grounding</li><li class="chip">AI memory</li><li class="chip">App automation</li></ul></div>
+      <div class="sk rv" style="--d:420ms"><h3>Security &amp; reliability <small>4</small></h3><ul><li class="chip">Play Integrity</li><li class="chip">Single-device login</li><li class="chip">Time-sync validation</li><li class="chip">Crash monitoring</li></ul></div>
+      <div class="sk rv" style="--d:480ms"><h3>Release <small>4</small></h3><ul><li class="chip">Android build &amp; release</li><li class="chip">iOS build &amp; release</li><li class="chip">Production maintenance</li><li class="chip">Debugging</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <p class="eyebrow rv" style="justify-content:center">Contact</p>
+    <h2 class="display split" id="contact-title" data-split>Have a <em>project</em> in mind?</h2>
+    <p class="lead rv" style="--d:300ms">Let's build something practical, reliable, and impactful. I'm available for full-time roles, remote work and freelance projects.</p>
+    <form class="cform rv" id="cform" style="--d:400ms" novalidate>
+      <h3>Tell me about your project</h3>
+      <p class="hint">Two quick fields. I reply from abdullahdecent31@gmail.com.</p>
+      <div class="field">
+        <label for="f-email">Your email <small>so I can reply</small></label>
+        <input type="email" id="f-email" name="email" placeholder="you@company.com" required autocomplete="email" inputmode="email">
+      </div>
+      <div class="field">
+        <label for="f-msg">What are you making? <small>a few lines is enough</small></label>
+        <textarea id="f-msg" name="message" placeholder="e.g. A field-sales app for 40 reps with GPS check-ins and offline order capture, Android first, launching in Q1." required minlength="10"></textarea>
+      </div>
+      <label class="hp">Leave this empty <input type="text" name="botcheck" tabindex="-1" autocomplete="off"></label>
+      <div class="cform-foot">
+        <span class="to">Goes to <b>abdullahdecent31@gmail.com</b></span>
+        <button class="btn btn-gold" type="submit" id="f-send" data-magnet>Send message <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+      <p class="form-msg" id="f-status" role="status" aria-live="polite"></p>
+      <div class="cform-alt">
+        <span class="or">Prefer to chat? Message me directly on WhatsApp — usually the fastest way to reach me.</span>
+        <a class="btn btn-line btn-wa" href="https://api.whatsapp.com/send?phone=923438450469&amp;text=Hi%20Abdullah%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" data-magnet><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.2 19z"/><path d="M9.5 9.5c0 3 2 5 5 5l1.2-1.2-1.7-1-1 .7c-.9-.4-1.6-1.1-2-2l.7-1-1-1.7z"/></svg>Chat on WhatsApp</a>
+      </div>
+    </form>
+    <p class="muted small rv" style="--d:460ms;margin-top:22px">Or use the direct details below.</p>
+
+    <div class="tz rv" style="--d:480ms" role="group" aria-label="Time zones">
+      <div class="tz-head"><h3>Working across time zones</h3><span class="muted small">live</span></div>
+      <div class="tz-grid">
+        <div class="me"><span class="c">Sialkot · PKT</span><div class="t" data-tz="Asia/Karachi">--:--</div><span class="o">my local time</span></div>
+        <div><span class="c">Dubai · GST</span><div class="t" data-tz="Asia/Dubai">--:--</div><span class="o">1 hour behind</span></div>
+        <div><span class="c">London</span><div class="t" data-tz="Europe/London">--:--</div><span class="o" data-off="Europe/London"></span></div>
+        <div><span class="c">New York</span><div class="t" data-tz="America/New_York">--:--</div><span class="o" data-off="America/New_York"></span></div>
+      </div>
+      <p class="tz-note">Comfortable overlap with Gulf and European working hours; US mornings align with my late afternoon and evening.</p>
+    </div>
+
+    <div class="faq rv" style="--d:520ms">
+      <details><summary>How do we start?<span class="pm" aria-hidden="true"></span></summary><div class="ans">Send a few lines through the form above or by email. I'll reply with questions, then a scoped plan and estimate. No commitment until you've seen the plan.</div></details>
+      <details><summary>Which platforms do you deliver?<span class="pm" aria-hidden="true"></span></summary><div class="ans">Android and iOS from a single Flutter codebase, including build and release. Where a feature needs the platform directly — background location, boot receivers, integrity checks — I write native Kotlin and Swift modules.</div></details>
+      <details><summary>Do you work with international clients?<span class="pm" aria-hidden="true"></span></summary><div class="ans">Yes. I work in English, I'm based on PKT (UTC+5) with good overlap for the Gulf and Europe, and I've maintained an app live in both Pakistan and Dubai.</div></details>
+      <details><summary>What happens after launch?<span class="pm" aria-hidden="true"></span></summary><div class="ans">Apps need maintenance: OS updates, store policy changes, crash fixes and new features. I own build, release and maintenance for the apps I ship, and can continue on a retainer or per-release basis.</div></details>
+    </div>
+    <div class="contact-rows rv" style="--d:500ms">
+      <div><span class="k">Email</span><span class="v"><a href="mailto:abdullahdecent31@gmail.com">abdullahdecent31@gmail.com</a></span><button type="button" class="copy" data-copy="abdullahdecent31@gmail.com" aria-label="Copy email address"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy</span></button></div>
+      <div><span class="k">Phone</span><span class="v"><a href="tel:+923438450469">+92&nbsp;343&nbsp;8450469</a></span><button type="button" class="copy" data-copy="+92 343 8450469" aria-label="Copy phone number"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy</span></button></div>
+      <div><span class="k">WhatsApp</span><span class="v">+92&nbsp;343&nbsp;8450469</span><a class="wa-pill" href="https://api.whatsapp.com/send?phone=923438450469&amp;text=Hi%20Abdullah%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8.2 19z"/><path d="M9.5 9.5c0 3 2 5 5 5l1.2-1.2-1.7-1-1 .7c-.9-.4-1.6-1.1-2-2l.7-1-1-1.7z"/></svg>Message</a></div>
+      <div><span class="k">GitHub</span><span class="v"><a href="https://github.com/Abdullah37249" target="_blank" rel="noopener noreferrer">github.com/Abdullah37249</a></span><span></span></div>
+      <div><span class="k">Based in</span><span class="v">Sialkot, Pakistan · PKT (UTC+5)</span><span></span></div>
+      <div><span class="k">Open to</span><span class="v">Full-time (on-site or remote), contract and freelance — Pakistan, UAE and international</span><span></span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><b>Abdullah Amanat Ali</b>Flutter Developer · AI &amp; Business Software Developer</div>
+    <div class="footer-links"><a href="mailto:abdullahdecent31@gmail.com">Email</a><a href="https://api.whatsapp.com/send?phone=923438450469&amp;text=Hi%20Abdullah%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://github.com/Abdullah37249" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+    <div>© <span id="year"></span> Abdullah Amanat Ali</div>
+  </div>
+</footer>
+
+<button type="button" class="to-top" id="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-bg" data-close></div>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <div class="panel-head"><span class="crumb">Case study · <b id="modal-crumb"></b></span><button type="button" class="close" data-close aria-label="Close case study"><svg viewBox="0 0 24 24" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="panel-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var PROJECTS = {
+    gps: {
+      name: 'GPS Workforce Monitor',
+      cats: ['Workforce management', 'GPS tracking', 'Attendance', 'Field operations'],
+      lead: 'A workforce management and employee tracking platform used by companies to manage attendance, GPS locations, shifts, field activity and employee movement — on Android and iOS.',
+      facts: [['Type', 'Production mobile application'], ['Platforms', 'Android & iOS'], ['Adoption', '30+ client companies'], ['Status', 'Live, actively maintained']],
+      overview: '<p>GPS Workforce Monitor gives companies a live view of their field employees. Staff clock in and out from the app, and the app keeps reporting location in the background throughout the shift — even after a reboot or after the OS kills the process.</p><p>Managers get real-time positions, location history with playback, geofence validation and shift management, while attendance is verified with a selfie at clock-in.</p>',
+      purpose: '<p>Companies with field teams need to know who is working, where they are, and whether attendance can be trusted. The app replaces manual check-ins with verified, location-aware attendance and gives operations teams a reliable record of employee movement during shifts.</p>',
+      features: ['Employee clock in / clock out', 'Selfie-based attendance verification', 'Real-time GPS tracking', 'Background location monitoring', 'Employee movement tracking', 'Location history & playback', 'Geofence validation (circle, rectangle, polygon)', 'Shift management', 'Automatic clock-out', 'Offline data handling with retry', 'Real-time MQTT communication', 'Push notifications', 'Single-device login enforcement', 'Automatic time-sync validation'],
+      contribution: '<p>I built the application and continue to maintain it in production. My work covers Flutter UI and application logic with GetX, API and Firebase integration, GPS and background location tracking, MQTT integration, local and offline storage, native Kotlin and Swift modules, background services, security hardening, production debugging and ongoing maintenance.</p>',
+      stack: [['Mobile', ['Flutter', 'Dart', 'GetX', 'WebView', 'SharedPreferences']], ['Firebase', ['Authentication', 'Cloud Messaging', 'Remote Config', 'Crashlytics']], ['Data & real-time', ['SQLite', 'sqflite', 'MQTT', 'Paho', 'REST APIs', 'Oracle ORDS', 'Oracle APEX']], ['Native', ['Kotlin', 'Swift', 'Android background services', 'Boot-completed handling', 'WakeLock', 'GPS / location services', 'Play Integrity']]],
+      flow: ['Employee', 'Clock in', 'GPS', 'Background tracking', 'MQTT / API', 'Backend', 'Monitoring'],
+      impl: [['Background tracking', 'Native Kotlin (Android) and Swift (iOS) modules run foreground services with boot-completed handling and WakeLock, including process-kill recovery so tracking survives reboots and OS-level termination.'], ['Real-time sync', 'MQTT (Paho) pushes location and event data in real time; Oracle ORDS / APEX REST APIs handle the rest of the backend communication.'], ['Offline handling', 'An offline data queue stores events locally in SQLite (sqflite) and retries automatically until delivery, so poor field connectivity does not lose data.'], ['Security', 'Single-device login enforcement, automatic time-sync validation and Play Integrity API checks, with Firebase Crashlytics monitoring in production.'], ['Attendance', 'Selfie-based verification at clock-in, geofence validation for circle, rectangle and polygon zones, and automatic clock-out at shift end.']]
+    },
+    dispatch: {
+      name: 'Book & Dispatch',
+      cats: ['Order management', 'Dispatch', 'Shop visits', 'Field operations'],
+      lead: 'A business application for managing orders, order dispatch, shops, shop visits and field activities — built for field sales operations.',
+      facts: [['Type', 'Business / field-operation application'], ['Platforms', 'Android & iOS'], ['Users', 'Field sales teams'], ['Status', 'Live, maintained']],
+      overview: '<p>Book & Dispatch supports the daily routine of a field sales employee: visit a shop, capture its information and photos, take or manage the order, dispatch it, and sync everything to the backend.</p>',
+      purpose: '<p>Order booking and dispatch on paper or across disconnected tools slows field teams down and loses information. The app puts shop data, orders and dispatch in one place so the backend has an accurate, timely record of field activity.</p>',
+      features: ['Order management', 'Order dispatch', 'Shop management', 'Shop visits', 'Shop information collection', 'Shop photo capture', 'Field activity recording', 'Backend / API sync'],
+      contribution: '<p>I handled API and Firebase integration, Android and iOS build and release, and ongoing debugging and maintenance of the production application.</p>',
+      stack: [['Mobile', ['Flutter', 'Dart', 'Camera / photo capture']], ['Backend', ['REST APIs', 'Firebase']], ['Release', ['Android build & release', 'iOS build & release']]],
+      flow: ['Field employee', 'Shop visit', 'Shop data', 'Order', 'Dispatch', 'Backend'],
+      impl: [['API integration', 'REST API communication for shops, orders and dispatch, with the backend as the source of truth.'], ['Firebase', 'Firebase-related integration alongside the REST backend.'], ['Photo capture', 'Camera-based capture of shop photos as part of shop information collection.'], ['Release ownership', 'Android and iOS build, release and production maintenance.']]
+    },
+    jarvis: {
+      name: 'Jarvis AI Assistant',
+      cats: ['Artificial intelligence', 'Voice AI', 'Automation', 'Mobile AI'],
+      lead: 'An AI-powered personal voice assistant for natural, interruptible conversation, intelligent commands, on-device app automation and memory.',
+      facts: [['Type', 'Advanced personal project'], ['Platform', 'Android'], ['Core', 'Gemini Live real-time voice'], ['Providers', 'Multi-provider with fallback']],
+      overview: '<p>Jarvis listens for an offline "Hey Jarvis" wake-word, then holds a real-time voice conversation over Gemini Live. It can be interrupted mid-sentence (barge-in), remembers what you tell it, and executes commands on the phone — opening apps, sending WhatsApp actions, and controlling Spotify and YouTube.</p>',
+      purpose: '<p>Built to explore what a production-grade voice assistant needs on Flutter: low-latency streaming audio, wake-word detection that works offline, resilient multi-provider AI routing, grounded answers, persistent memory, and safe execution of actions on the device. It is a personal project, not a commercial product.</p>',
+      features: ['Real-time voice conversation (Gemini Live)', 'Interruptible / barge-in conversation', 'Offline "Hey Jarvis" wake-word activation', 'Voice commands with AI-powered execution', 'Opening mobile applications', 'WhatsApp automation', 'Spotify control', 'YouTube control', 'Remember / recall memory', 'Multiple AI providers with fallback', 'Google grounding', 'Text-to-speech (Edge TTS)'],
+      contribution: '<p>Solo project. I designed and built the whole system: the Flutter app, real-time voice pipeline, wake-word integration, AI provider orchestration, memory, intent-to-action execution and Android automation.</p>',
+      stack: [['Mobile', ['Flutter', 'Dart', 'Android integration']], ['AI providers', ['Gemini Live API', 'Groq', 'OpenRouter', 'Qwen', 'Pollinations']], ['Voice', ['Edge TTS', 'Wake-word engine', 'Barge-in handling']], ['Capabilities', ['Google grounding', 'AI memory', 'App automation']]],
+      flow: ['Voice', 'Speech processing', 'AI', 'Intent', 'Action', 'Verification', 'Voice response'],
+      impl: [['Real-time voice', 'Streaming audio in and out over the Gemini Live API, with barge-in so the user can interrupt the assistant mid-response.'], ['Wake-word', 'Offline "Hey Jarvis" detection so the assistant activates without a network round-trip.'], ['Multi-provider AI', 'Gemini, Groq, OpenRouter, Qwen and Pollinations behind one interface, with fallback when a provider is unavailable.'], ['Memory', 'Remember / recall commands persist facts across sessions and feed them back into context.'], ['Command execution', 'Recognised intents map to Android actions — launching apps, WhatsApp actions, Spotify and YouTube control — with verification before responding by voice.']]
+    },
+    ruby: {
+      name: 'Ruby Form',
+      cats: ['International business application', 'Field force', 'Attendance', 'Orders', 'Shop operations'],
+      lead: 'An international field-force application for daily employee operations — attendance, shop visits, field activities and orders — live across Pakistan and Dubai.',
+      facts: [['Type', 'International business application'], ['Platforms', 'Android & iOS'], ['Regions', 'Pakistan & Dubai'], ['Status', 'Live, maintained in production']],
+      overview: '<p>Ruby Form structures a field employee\'s full working day. The employee clocks in, visits assigned shops, records field activities and shop information, manages orders, and clocks out — with everything reported back to the business.</p>',
+      purpose: '<p>Businesses operating field teams in more than one country need a single, consistent way to run attendance and shop operations. Ruby Form gives employees one app for the whole day and gives the business a complete record of attendance, visits and orders.</p>',
+      features: ['Employee clock in / clock out', 'Attendance', 'Shop visits', 'Shop management', 'Business / shop information', 'Field activities', 'Order management', 'Daily employee activity tracking'],
+      contribution: '<p>I built the UI and features, integrated the REST APIs, implemented the attendance and order workflows, and own Android and iOS build, release and production maintenance.</p>',
+      stack: [['Mobile', ['Flutter', 'Dart']], ['Backend', ['REST APIs', 'JSON']], ['Release', ['Android build & release', 'iOS build & release']]],
+      flow: ['Employee', 'Clock in', 'Shop visit', 'Field activity', 'Orders', 'Clock out'],
+      impl: [['Attendance workflow', 'Clock-in and clock-out bookend the day and anchor every activity recorded in between.'], ['Shop operations', 'Shop visits, shop information and field activities are captured in-app and sent to the backend over REST.'], ['Order workflow', 'Order management as part of the shop visit, synced to the business backend.'], ['Multi-region release', 'Android and iOS releases maintained for use across Pakistan and Dubai.']]
+    }
+  };
+
+  var $ = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+  var esc = function (s) { return String(s).replace(/&(?!amp;)/g, '&').replace(/</g, '&lt;'); };
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var fine = window.matchMedia('(pointer: fine)').matches;
+
+  /* ---------- Intro ---------- */
+  var intro = $('#intro');
+  document.body.classList.add('locked');
+  function endIntro() { intro.classList.add('done'); document.body.classList.remove('locked'); startHero(); }
+  if (reduce) endIntro(); else setTimeout(endIntro, 1700);
+  window.addEventListener('load', function () { if (!intro.classList.contains('done')) setTimeout(endIntro, 400); });
+
+  /* ---------- Split text ---------- */
+  $$('[data-split]').forEach(function (el) {
+    var i = 0;
+    var walk = function (node) {
+      Array.prototype.slice.call(node.childNodes).forEach(function (n) {
+        if (n.nodeType === 3) {
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function (part) {
+            if (!part) return;
+            if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(' ')); return; }
+            var w = document.createElement('span'); w.className = 'w';
+            var s = document.createElement('span'); s.textContent = part; s.style.setProperty('--i', i++);
+            w.appendChild(s); frag.appendChild(w);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1) walk(n);
+      });
+    };
+    walk(el);
+  });
+  function startHero() { var h = $('#hero-title'); if (h) h.classList.add('in'); $$('.hero .rv').forEach(function (el) { el.classList.add('in'); }); runCounters(); }
+
+  /* ---------- Reveal on scroll ---------- */
+  var revealEls = $$('.rv:not(.hero .rv), .split:not(#hero-title), .line-rv, .case');
+  if (reduce || !('IntersectionObserver' in window)) revealEls.forEach(function (el) { el.classList.add('in'); });
+  else {
+    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  }
+
+  /* ---------- Counters (real figures only) ---------- */
+  var counted = false;
+  function runCounters() {
+    if (counted) return; counted = true;
+    $$('[data-count]').forEach(function (el) {
+      var target = parseFloat(el.getAttribute('data-count')), suffix = el.getAttribute('data-suffix') || '';
+      var dec = (String(target).split('.')[1] || '').length;
+      if (reduce) { el.textContent = target.toFixed(dec) + suffix; return; }
+      var t0 = null, dur = 1400;
+      var step = function (t) {
+        if (!t0) t0 = t; var p = Math.min(1, (t - t0) / dur); p = 1 - Math.pow(1 - p, 3);
+        el.textContent = (target * p).toFixed(dec) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    });
+  }
+
+  /* ---------- Nav ---------- */
+  var nav = $('#nav'), burger = $('#burger'), links = $$('[data-nav]'), progress = $('#progress'), toTop = $('#to-top');
+  function setMenu(o) { nav.classList.toggle('open', o); burger.setAttribute('aria-expanded', String(o)); burger.setAttribute('aria-label', o ? 'Close menu' : 'Open menu'); }
+  burger.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
+  document.addEventListener('click', function (e) { if (nav.classList.contains('open') && !nav.contains(e.target)) setMenu(false); });
+  var sections = links.map(function (a) { return $(a.getAttribute('href')); }).filter(Boolean);
+  var lastY = 0;
+  function onScroll() {
+    var y = window.scrollY || window.pageYOffset;
+    nav.classList.toggle('solid', y > 20);
+    nav.classList.toggle('hide', y > lastY && y > 400 && !nav.classList.contains('open'));
+    lastY = y;
+    toTop.classList.toggle('show', y > 700);
+    var h = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = (h > 0 ? Math.min(100, y / h * 100) : 0) + '%';
+    var cur = sections[0];
+    sections.forEach(function (s) { if (s.offsetTop - 160 <= y) cur = s; });
+    links.forEach(function (a) { var on = a.getAttribute('href') === '#' + cur.id; a.classList.toggle('active', on); if (on) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); });
+  }
+  var tick = false;
+  window.addEventListener('scroll', function () { if (!tick) { requestAnimationFrame(function () { onScroll(); tick = false; }); tick = true; } }, { passive: true });
+  window.addEventListener('resize', onScroll); onScroll();
+
+  /* In-page links: JS scroll (works in sandboxed previews too) */
+  function scrollToId(id) {
+    var el = document.getElementById(id); if (!el) return false;
+    var top = id === 'home' ? 0 : el.getBoundingClientRect().top + (window.scrollY || window.pageYOffset) - 79;
+    window.scrollTo({ top: Math.max(0, top), behavior: reduce ? 'auto' : 'smooth' });
+    try { if (history.replaceState) history.replaceState(null, '', '#' + id); } catch (e) {}
+    return true;
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!a || a.getAttribute('href').length < 2) return;
+    if (scrollToId(a.getAttribute('href').slice(1))) { e.preventDefault(); setMenu(false); }
+  });
+  toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }); });
+
+  /* ---------- Theme toggle ---------- */
+  var themeBtn = $('#theme-btn'), root = document.documentElement;
+  function applyTheme(t) {
+    if (t === 'light') root.setAttribute('data-theme', 'light'); else root.removeAttribute('data-theme');
+    var light = t === 'light';
+    themeBtn.setAttribute('aria-pressed', String(light));
+    themeBtn.setAttribute('aria-label', light ? 'Switch to dark theme' : 'Switch to light theme');
+    try { localStorage.setItem('theme', light ? 'light' : 'dark'); } catch (e) {}
+  }
+  themeBtn.addEventListener('click', function () { applyTheme(root.getAttribute('data-theme') === 'light' ? 'dark' : 'light'); });
+  themeBtn.setAttribute('aria-pressed', String(root.getAttribute('data-theme') === 'light'));
+
+  /* ---------- CV download (PDF embedded in this file) ---------- */
+  var CV_B64 = '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OCA1MDYgNDU5IDYzNCAzNDggNjE1IDQ1MSA1MjUgNzE0IDQ1MiAzMDUgNTU3IDQzMwozMDYgNjEyIDY2MiA1NDMgNjMwIDUyOSAyNTEgNDIwIDkwNSA4NTQgNjcyIDQ4NyA4MDcgNTI1IDUxOSA2MTUKNTQyIDQ4OCA1MTkgNTY3IDUyOSA4ODkgNjgyIDMxOCA2NDUgMzAzIDMwMyA1MzMgMjY3IDI1MiAzNTQgMjY3CjkwNSA2NDEgNjIzIDIzOSA0MTggNDE4IDQ4NyBdCi9Gb250RGVzY3JpcHRvciA3MSAwIFIKL1RvVW5pY29kZSA3MiAwIFIKPj4KZW5kb2JqCgo3NCAwIG9iago8PC9GMSA2OCAwIFIvRjIgNzMgMCBSCj4+CmVuZG9iagoKNzUgMCBvYmoKPDwKL0ZvbnQgNzQgMCBSCi9Qcm9jU2V0Wy9QREYvVGV4dF0KPj4KZW5kb2JqCgoxIDAgb2JqCjw8L1R5cGUvUGFnZS9QYXJlbnQgNjMgMCBSL1Jlc291cmNlcyA3NSAwIFIvTWVkaWFCb3hbMCAwIDU5NS4zMDM5MzcwMDc4NzQgODQxLjg4OTc2Mzc3OTUyOF0vQW5ub3RzWwo2MiAwIFIgXQovVGFicy9TCi9TdHJ1Y3RQYXJlbnRzIDAKL0NvbnRlbnRzIDIgMCBSPj4KZW5kb2JqCgo1IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9TdGFuZGFyZAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCj4+Ci9LWzAgXQo+PgplbmRvYmoKCjYgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL1N0YW5kYXJkCi9QIDQgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMDIKPj4KL0tbMSBdCj4+CmVuZG9iagoKOCAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvTGluawovUCA3IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvVGV4dERlY29yYXRpb25UeXBlL1VuZGVybGluZQo+PgovS1s4IDw8L1R5cGUvT0JKUi9PYmogNjIgMCBSID4+Cl0KPj4KZW5kb2JqCgo3IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9TdGFuZGFyZAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCi9TcGFjZUJlZm9yZSAwLjA1Ci9TcGFjZUFmdGVyIDAuMTUKPj4KL0tbMiAzIDQgNSA2IDcgOCAwIFIgIF0KPj4KZW5kb2JqCgo5IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9TdGFuZGFyZAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCi9TcGFjZUJlZm9yZSAwLjEzCi9TcGFjZUFmdGVyIDAuMDYKPj4KL0tbOSBdCj4+CmVuZG9iagoKMTAgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL1N0YW5kYXJkCi9QIDQgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMDQ2Cj4+Ci9LWzEwIDExIDEyIDEzIF0KPj4KZW5kb2JqCgoxMSAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4xMwovU3BhY2VBZnRlciAwLjA2Cj4+Ci9LWzE0IF0KPj4KZW5kb2JqCgoxMiAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wNDYKPj4KL0tbMTUgMTYgXQo+PgplbmRvYmoKCjEzIDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9TdGFuZGFyZAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCi9TcGFjZUJlZm9yZSAwLjAzCj4+Ci9LWzE3IDE4IF0KPj4KZW5kb2JqCgoxNCAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wMwo+PgovS1sxOSAyMCBdCj4+CmVuZG9iagoKMTUgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL1N0YW5kYXJkCi9QIDQgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMDMKPj4KL0tbMjEgMjIgXQo+PgplbmRvYmoKCjE2IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9TdGFuZGFyZAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCi9TcGFjZUJlZm9yZSAwLjAzCj4+Ci9LWzIzIDI0IF0KPj4KZW5kb2JqCgoxNyAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4xMwovU3BhY2VBZnRlciAwLjA2Cj4+Ci9LWzI1IF0KPj4KZW5kb2JqCgoxOCAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wNDYKPj4KL0tbMjYgMjcgXQo+PgplbmRvYmoKCjE5IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9TdGFuZGFyZAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCj4+Ci9LWzI4IDI5IF0KPj4KZW5kb2JqCgoyMiAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvTGJsCi9QIDIxIDAgUgovUGcgMSAwIFIKL0tbMzAgXQo+PgplbmRvYmoKCjI0IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9MaXN0IzIwUGFyYWdyYXBoCi9QIDIzIDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCi9TcGFjZUJlZm9yZSAwLjA1Ci9TdGFydEluZGVudCAwLjA4Cj4+Ci9LWzMxIDMyIDMzIDM0IF0KPj4KZW5kb2JqCgoyMyAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvTEJvZHkKL1AgMjEgMCBSCi9QZyAxIDAgUgovS1syNCAwIFIgIF0KPj4KZW5kb2JqCgoyMSAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvTEkKL1AgMjAgMCBSCi9QZyAxIDAgUgovS1syMiAwIFIgIDIzIDAgUiAgXQo+PgplbmRvYmoKCjI2IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9MYmwKL1AgMjUgMCBSCi9QZyAxIDAgUgovS1szNSBdCj4+CmVuZG9iagoKMjggMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL0xpc3QjMjBQYXJhZ3JhcGgKL1AgMjcgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMDMKL1N0YXJ0SW5kZW50IDAuMDgKPj4KL0tbMzYgMzcgMzggXQo+PgplbmRvYmoKCjI3IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9MQm9keQovUCAyNSAwIFIKL1BnIDEgMCBSCi9LWzI4IDAgUiAgXQo+PgplbmRvYmoKCjI1IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9MSQovUCAyMCAwIFIKL1BnIDEgMCBSCi9LWzI2IDAgUiAgMjcgMCBSICBdCj4+CmVuZG9iagoKMzAgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL0xibAovUCAyOSAwIFIKL1BnIDEgMCBSCi9LWzM5IF0KPj4KZW5kb2JqCgozMiAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvTGlzdCMyMFBhcmFncmFwaAovUCAzMSAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wMwovU3RhcnRJbmRlbnQgMC4wOAo+PgovS1s0MCA0MSA0MiBdCj4+CmVuZG9iagoKMzEgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL0xCb2R5Ci9QIDI5IDAgUgovUGcgMSAwIFIKL0tbMzIgMCBSICBdCj4+CmVuZG9iagoKMjkgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL0xJCi9QIDIwIDAgUgovUGcgMSAwIFIKL0tbMzAgMCBSICAzMSAwIFIgIF0KPj4KZW5kb2JqCgozNCAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvTGJsCi9QIDMzIDAgUgovUGcgMSAwIFIKL0tbNDMgXQo+PgplbmRvYmoKCjM2IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9MaXN0IzIwUGFyYWdyYXBoCi9QIDM1IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCi9TcGFjZUJlZm9yZSAwLjAzCi9TdGFydEluZGVudCAwLjA4Cj4+Ci9LWzQ0IDQ1IDQ2IF0KPj4KZW5kb2JqCgozNSAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvTEJvZHkKL1AgMzMgMCBSCi9QZyAxIDAgUgovS1szNiAwIFIgIF0KPj4KZW5kb2JqCgozMyAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvTEkKL1AgMjAgMCBSCi9QZyAxIDAgUgovS1szNCAwIFIgIDM1IDAgUiAgXQo+PgplbmRvYmoKCjM4IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9MYmwKL1AgMzcgMCBSCi9QZyAxIDAgUgovS1s0NyBdCj4+CmVuZG9iagoKNDAgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL0xpc3QjMjBQYXJhZ3JhcGgKL1AgMzkgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMDMKL1N0YXJ0SW5kZW50IDAuMDgKPj4KL0tbNDggNDkgNTAgXQo+PgplbmRvYmoKCjM5IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9MQm9keQovUCAzNyAwIFIKL1BnIDEgMCBSCi9LWzQwIDAgUiAgXQo+PgplbmRvYmoKCjM3IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9MSQovUCAyMCAwIFIKL1BnIDEgMCBSCi9LWzM4IDAgUiAgMzkgMCBSICBdCj4+CmVuZG9iagoKNDIgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL0xibAovUCA0MSAwIFIKL1BnIDEgMCBSCi9LWzUxIF0KPj4KZW5kb2JqCgo0NCAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvTGlzdCMyMFBhcmFncmFwaAovUCA0MyAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wMwovU3RhcnRJbmRlbnQgMC4wOAo+PgovS1s1MiA1MyA1NCBdCj4+CmVuZG9iagoKNDMgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL0xCb2R5Ci9QIDQxIDAgUgovUGcgMSAwIFIKL0tbNDQgMCBSICBdCj4+CmVuZG9iagoKNDEgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL0xJCi9QIDIwIDAgUgovUGcgMSAwIFIKL0tbNDIgMCBSICA0MyAwIFIgIF0KPj4KZW5kb2JqCgoyMCAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvTAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MaXN0L0xpc3ROdW1iZXJpbmcvU3F1YXJlCj4+Ci9LWzIxIDAgUiAgMjUgMCBSICAyOSAwIFIgIDMzIDAgUiAgMzcgMCBSICA0MSAwIFIgIF0KPj4KZW5kb2JqCgo0NSAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4xMwovU3BhY2VBZnRlciAwLjA2Cj4+Ci9LWzU1IF0KPj4KZW5kb2JqCgo0NiAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wNDYKPj4KL0tbNTYgNTcgXQo+PgplbmRvYmoKCjQ3IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9TdGFuZGFyZAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCj4+Ci9LWzU4IDU5IF0KPj4KZW5kb2JqCgo0OCAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wMwo+PgovS1s2MCA2MSBdCj4+CmVuZG9iagoKNDkgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL1N0YW5kYXJkCi9QIDQgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMDUKPj4KL0tbNjIgNjMgXQo+PgplbmRvYmoKCjUwIDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9TdGFuZGFyZAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCj4+Ci9LWzY0IDY1IF0KPj4KZW5kb2JqCgo1MSAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wMwo+PgovS1s2NiA2NyBdCj4+CmVuZG9iagoKNTIgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL1N0YW5kYXJkCi9QIDQgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMDUKPj4KL0tbNjggNjkgXQo+PgplbmRvYmoKCjUzIDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9TdGFuZGFyZAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCj4+Ci9LWzcwIDcxIF0KPj4KZW5kb2JqCgo1NCAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wMwo+PgovS1s3MiA3MyBdCj4+CmVuZG9iagoKNTUgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL1N0YW5kYXJkCi9QIDQgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMDUKPj4KL0tbNzQgNzUgXQo+PgplbmRvYmoKCjU2IDAgb2JqCjw8L1R5cGUvU3RydWN0RWxlbQovUy9TdGFuZGFyZAovUCA0IDAgUgovUGcgMSAwIFIKL0EgPDwvTy9MYXlvdXQvUGxhY2VtZW50L0Jsb2NrCj4+Ci9LWzc2IDc3IDc4IF0KPj4KZW5kb2JqCgo1NyAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wMwo+PgovS1s3OSA4MCBdCj4+CmVuZG9iagoKNTggMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL1N0YW5kYXJkCi9QIDQgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMTMKL1NwYWNlQWZ0ZXIgMC4wNgo+PgovS1s4MSBdCj4+CmVuZG9iagoKNTkgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL1N0YW5kYXJkCi9QIDQgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMDQ2Cj4+Ci9LWzgyIDgzIDg0IF0KPj4KZW5kb2JqCgo2MCAwIG9iago8PC9UeXBlL1N0cnVjdEVsZW0KL1MvU3RhbmRhcmQKL1AgNCAwIFIKL1BnIDEgMCBSCi9BIDw8L08vTGF5b3V0L1BsYWNlbWVudC9CbG9jawovU3BhY2VCZWZvcmUgMC4wMwo+PgovS1s4NSA4NiA4NyBdCj4+CmVuZG9iagoKNjEgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL1N0YW5kYXJkCi9QIDQgMCBSCi9QZyAxIDAgUgovQSA8PC9PL0xheW91dC9QbGFjZW1lbnQvQmxvY2sKL1NwYWNlQmVmb3JlIDAuMDMKPj4KL0tbODggODkgXQo+PgplbmRvYmoKCjQgMCBvYmoKPDwvVHlwZS9TdHJ1Y3RFbGVtCi9TL0RvY3VtZW50Ci9QIDc2IDAgUgovUGcgMSAwIFIKL0tbNSAwIFIgIDYgMCBSICA3IDAgUiAgOSAwIFIgIDEwIDAgUiAgMTEgMCBSICAxMiAwIFIgIDEzIDAgUiAgMTQgMCBSICAxNSAwIFIgIDE2IDAgUiAgMTcgMCBSICAxOCAwIFIgIDE5IDAgUiAgMjAgMCBSICA0NSAwIFIgCjQ2IDAgUiAgNDcgMCBSICA0OCAwIFIgIDQ5IDAgUiAgNTAgMCBSICA1MSAwIFIgIDUyIDAgUiAgNTMgMCBSICA1NCAwIFIgIDU1IDAgUiAgNTYgMCBSICA1NyAwIFIgIDU4IDAgUiAgNTkgMCBSICA2MCAwIFIgIDYxIDAgUiAKXQo+PgplbmRvYmoKCjc2IDAgb2JqCjw8L1R5cGUvU3RydWN0VHJlZVJvb3QKL1BhcmVudFRyZWUgNzcgMCBSCi9Sb2xlTWFwPDwvTGlzdCMyMFBhcmFncmFwaC9QCi9TdGFuZGFyZC9QCj4+Ci9LWzQgMCBSICBdCj4+CmVuZG9iagoKNzcgMCBvYmoKPDwvTnVtc1sKMCBbIDUgMCBSIDYgMCBSIDcgMCBSIDcgMCBSIDcgMCBSIDcgMCBSIDcgMCBSIDcgMCBSIDggMCBSIDkgMCBSCjEwIDAgUiAxMCAwIFIgMTAgMCBSIDEwIDAgUiAxMSAwIFIgMTIgMCBSIDEyIDAgUiAxMyAwIFIgMTMgMCBSIDE0IDAgUgoxNCAwIFIgMTUgMCBSIDE1IDAgUiAxNiAwIFIgMTYgMCBSIDE3IDAgUiAxOCAwIFIgMTggMCBSIDE5IDAgUiAxOSAwIFIKMjIgMCBSIDI0IDAgUiAyNCAwIFIgMjQgMCBSIDI0IDAgUiAyNiAwIFIgMjggMCBSIDI4IDAgUiAyOCAwIFIgMzAgMCBSCjMyIDAgUiAzMiAwIFIgMzIgMCBSIDM0IDAgUiAzNiAwIFIgMzYgMCBSIDM2IDAgUiAzOCAwIFIgNDAgMCBSIDQwIDAgUgo0MCAwIFIgNDIgMCBSIDQ0IDAgUiA0NCAwIFIgNDQgMCBSIDQ1IDAgUiA0NiAwIFIgNDYgMCBSIDQ3IDAgUiA0NyAwIFIKNDggMCBSIDQ4IDAgUiA0OSAwIFIgNDkgMCBSIDUwIDAgUiA1MCAwIFIgNTEgMCBSIDUxIDAgUiA1MiAwIFIgNTIgMCBSCjUzIDAgUiA1MyAwIFIgNTQgMCBSIDU0IDAgUiA1NSAwIFIgNTUgMCBSIDU2IDAgUiA1NiAwIFIgNTYgMCBSIDU3IDAgUgo1NyAwIFIgNTggMCBSIDU5IDAgUiA1OSAwIFIgNTkgMCBSIDYwIDAgUiA2MCAwIFIgNjAgMCBSIDYxIDAgUiA2MSAwIFIKXQoxIDggMCBSCl0+PgplbmRvYmoKCjYzIDAgb2JqCjw8L1R5cGUvUGFnZXMKL1Jlc291cmNlcyA3NSAwIFIKL0tpZHNbIDEgMCBSIF0KL0NvdW50IDE+PgplbmRvYmoKCjYyIDAgb2JqCjw8L1R5cGUvQW5ub3QvU3VidHlwZS9MaW5rL0JvcmRlclswIDAgMF0vUmVjdFszNDUuNjkzIDc1Ni42ODkgNDU3LjI1NyA3NjguODg5XS9Db250ZW50czxGRUZGMDA2NzAwNjkwMDc0MDA2ODAwNzUwMDYyMDAyRTAwNjMwMDZGMDA2RDAwMkYwMDQxMDA2MjAwNjQwMDc1MDA2QzAwNkMwMDYxMDA2ODAwMzMwMDM3MDAzMjAwMzQwMDM5Pi9BPDwvVHlwZS9BY3Rpb24vUy9VUkkvVVJJKGh0dHBzOi8vZ2l0aHViLmNvbS9BYmR1bGxhaDM3MjQ5KT4+Ci9TdHJ1Y3RQYXJlbnQgMT4+CmVuZG9iagoKNzggMCBvYmoKPDwvVHlwZS9DYXRhbG9nL1BhZ2VzIDYzIDAgUgovUGFnZU1vZGUvVXNlT3V0bGluZXMKL09wZW5BY3Rpb25bMSAwIFIgL1hZWiBudWxsIG51bGwgMF0KL1ZpZXdlclByZWZlcmVuY2VzPDwvRGlzcGxheURvY1RpdGxlIHRydWUKPj4KL1N0cnVjdFRyZWVSb290IDc2IDAgUgovTGFuZyhlbi1VUykKL01hcmtJbmZvPDwvTWFya2VkIHRydWU+Pgo+PgplbmRvYmoKCjc5IDAgb2JqCjw8L1RpdGxlPEZFRkYwMDQxMDA2MjAwNjQwMDc1MDA2QzAwNkMwMDYxMDA2ODAwMjAwMDQxMDA2RDAwNjEwMDZFMDA2MTAwNzQwMDIwMDA0MTAwNkMwMDY5MDAyMDIwMTQwMDIwMDA0NjAwNkMwMDc1MDA3NDAwNzQwMDY1MDA3MjAwMjAwMDQ0MDA2NTAwNzYwMDY1MDA2QzAwNkYwMDcwMDA2NTAwNzIwMDIwMDA0MzAwNTY+Ci9BdXRob3I8RkVGRjAwNDEwMDYyMDA2NDAwNzUwMDZDMDA2QzAwNjEwMDY4MDAyMDAwNDEwMDZEMDA2MTAwNkUwMDYxMDA3NDAwMjAwMDQxMDA2QzAwNjk+Ci9DcmVhdG9yPEZFRkYwMDU3MDA3MjAwNjkwMDc0MDA2NTAwNzI+Ci9Qcm9kdWNlcjxGRUZGMDA0QzAwNjkwMDYyMDA3MjAwNjUwMDRGMDA2NjAwNjYwMDY5MDA2MzAwNjUwMDIwMDAzMjAwMzQwMDJFMDAzMj4KL0NyZWF0aW9uRGF0ZShEOjIwMjYwOTE2MDYyMjMzWicpPj4KZW5kb2JqCgp4cmVmCjAgODAKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDMwOTU5IDAwMDAwIG4gCjAwMDAwMDAwMTkgMDAwMDAgbiAKMDAwMDAwNDg5MSAwMDAwMCBuIAowMDAwMDM3OTc1IDAwMDAwIG4gCjAwMDAwMzExMjcgMDAwMDAgbiAKMDAwMDAzMTIzNyAwMDAwMCBuIAowMDAwMDMxNTExIDAwMDAwIG4gCjAwMDAwMzEzNjUgMDAwMDAgbiAKMDAwMDAzMTY3MyAwMDAwMCBuIAowMDAwMDMxODE4IDAwMDAwIG4gCjAwMDAwMzE5NTggMDAwMDAgbiAKMDAwMDAzMjEwNSAwMDAwMCBuIAowMDAwMDMyMjM5IDAwMDAwIG4gCjAwMDAwMzIzNzIgMDAwMDAgbiAKMDAwMDAzMjUwNSAwMDAwMCBuIAowMDAwMDMyNjM4IDAwMDAwIG4gCjAwMDAwMzI3NzEgMDAwMDAgbiAKMDAwMDAzMjkxOCAwMDAwMCBuIAowMDAwMDMzMDUyIDAwMDAwIG4gCjAwMDAwMzU1OTQgMDAwMDAgbiAKMDAwMDAzMzQ4OCAwMDAwMCBuIAowMDAwMDMzMTY3IDAwMDAwIG4gCjAwMDAwMzM0MDcgMDAwMDAgbiAKMDAwMDAzMzI0MSAwMDAwMCBuIAowMDAwMDMzODkyIDAwMDAwIG4gCjAwMDAwMzM1NzQgMDAwMDAgbiAKMDAwMDAzMzgxMSAwMDAwMCBuIAowMDAwMDMzNjQ4IDAwMDAwIG4gCjAwMDAwMzQyOTYgMDAwMDAgbiAKMDAwMDAzMzk3OCAwMDAwMCBuIAowMDAwMDM0MjE1IDAwMDAwIG4gCjAwMDAwMzQwNTIgMDAwMDAgbiAKMDAwMDAzNDcwMCAwMDAwMCBuIAowMDAwMDM0MzgyIDAwMDAwIG4gCjAwMDAwMzQ2MTkgMDAwMDAgbiAKMDAwMDAzNDQ1NiAwMDAwMCBuIAowMDAwMDM1MTA0IDAwMDAwIG4gCjAwMDAwMzQ3ODYgMDAwMDAgbiAKMDAwMDAzNTAyMyAwMDAwMCBuIAowMDAwMDM0ODYwIDAwMDAwIG4gCjAwMDAwMzU1MDggMDAwMDAgbiAKMDAwMDAzNTE5MCAwMDAwMCBuIAowMDAwMDM1NDI3IDAwMDAwIG4gCjAwMDAwMzUyNjQgMDAwMDAgbiAKMDAwMDAzNTc0NyAwMDAwMCBuIAowMDAwMDM1ODk0IDAwMDAwIG4gCjAwMDAwMzYwMjggMDAwMDAgbiAKMDAwMDAzNjE0MyAwMDAwMCBuIAowMDAwMDM2Mjc2IDAwMDAwIG4gCjAwMDAwMzY0MDkgMDAwMDAgbiAKMDAwMDAzNjUyNCAwMDAwMCBuIAowMDAwMDM2NjU3IDAwMDAwIG4gCjAwMDAwMzY3OTAgMDAwMDAgbiAKMDAwMDAzNjkwNSAwMDAwMCBuIAowMDAwMDM3MDM4IDAwMDAwIG4gCjAwMDAwMzcxNzEgMDAwMDAgbiAKMDAwMDAzNzI4OSAwMDAwMCBuIAowMDAwMDM3NDIyIDAwMDAwIG4gCjAwMDAwMzc1NjkgMDAwMDAgbiAKMDAwMDAzNzcwNiAwMDAwMCBuIAowMDAwMDM3ODQyIDAwMDAwIG4gCjAwMDAwMzkxNjAgMDAwMDAgbiAKMDAwMDAzOTA4NSAwMDAwMCBuIAowMDAwMDA0OTEyIDAwMDAwIG4gCjAwMDAwMTU0OTggMDAwMDAgbiAKMDAwMDAxNTUyMSAwMDAwMCBuIAowMDAwMDE1NzE3IDAwMDAwIG4gCjAwMDAwMTYzMDkgMDAwMDAgbiAKMDAwMDAxNjczMSAwMDAwMCBuIAowMDAwMDI5NDQ5IDAwMDAwIG4gCjAwMDAwMjk0NzIgMDAwMDAgbiAKMDAwMDAyOTY3MSAwMDAwMCBuIAowMDAwMDMwMzU1IDAwMDAwIG4gCjAwMDAwMzA4NjAgMDAwMDAgbiAKMDAwMDAzMDkwMyAwMDAwMCBuIAowMDAwMDM4MzAyIDAwMDAwIG4gCjAwMDAwMzg0MjEgMDAwMDAgbiAKMDAwMDAzOTQ0NyAwMDAwMCBuIAowMDAwMDM5NjYxIDAwMDAwIG4gCnRyYWlsZXIKPDwvU2l6ZSA4MC9Sb290IDc4IDAgUgovSW5mbyA3OSAwIFIKL0lEIFsgPDY0MDlBQzg5RURCMTdBQzk0ODE1RUNFODAwQUJGMTYwPgo8NjQwOUFDODlFREIxN0FDOTQ4MTVFQ0U4MDBBQkYxNjA+IF0KL0RvY0NoZWNrc3VtIC8zN0FDMzgzODlGQTJBMUVGNDc4N0M3ODk3M0Y2NjFBQQo+PgpzdGFydHhyZWYKNDAxMDYKJSVFT0YK';
+  function cvUrl() {
+    try {
+      var bin = atob(CV_B64), arr = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i);
+      return URL.createObjectURL(new Blob([arr], { type: 'application/pdf' }));
+    } catch (e) { return 'data:application/pdf;base64,' + CV_B64; }
+  }
+  var cvHref = cvUrl();
+  $$('[data-cv], #cv-link').forEach(function (a) { a.href = cvHref; });
+
+  /* ---------- Time zones ---------- */
+  var tzEls = $$('[data-tz]'), offEls = $$('[data-off]');
+  function tzTick() {
+    var now = new Date();
+    tzEls.forEach(function (el) { try { el.textContent = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: el.getAttribute('data-tz') }).format(now); } catch (e) { el.textContent = ''; } });
+    offEls.forEach(function (el) {
+      try {
+        var get = function (tz) { var parts = new Intl.DateTimeFormat('en-GB', { hour: 'numeric', minute: 'numeric', timeZone: tz, hourCycle: 'h23' }).formatToParts(now); var h = +parts.find(function (p) { return p.type === 'hour'; }).value, m = +parts.find(function (p) { return p.type === 'minute'; }).value; return h * 60 + m; };
+        var d = get(el.getAttribute('data-off')) - get('Asia/Karachi'); if (d > 720) d -= 1440; if (d < -720) d += 1440;
+        var h = Math.round(Math.abs(d) / 60);
+        el.textContent = d === 0 ? 'same time' : h + (h === 1 ? ' hour ' : ' hours ') + (d < 0 ? 'behind' : 'ahead');
+      } catch (e) { el.textContent = ''; }
+    });
+  }
+  tzTick(); setInterval(tzTick, 30000);
+
+  /* ---------- Local clock (PKT, UTC+5) ---------- */
+  var clock = $('#clock');
+  function tickClock() {
+    try { clock.textContent = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Karachi' }).format(new Date()); } catch (e) { clock.textContent = ''; }
+  }
+  tickClock(); setInterval(tickClock, 30000);
+
+  /* ---------- Cursor spotlight, magnetic buttons, tilt (pointer devices only) ---------- */
+  if (fine && !reduce) {
+    var spot = $('#spot'), sx = 0, sy = 0, tx = 0, ty = 0, raf = false;
+    document.addEventListener('mousemove', function (e) {
+      document.body.classList.add('has-mouse'); tx = e.clientX; ty = e.clientY;
+      if (!raf) { raf = true; requestAnimationFrame(function loop() { sx += (tx - sx) * .12; sy += (ty - sy) * .12; spot.style.transform = 'translate(' + sx + 'px,' + sy + 'px)'; if (Math.abs(tx - sx) > .5 || Math.abs(ty - sy) > .5) requestAnimationFrame(loop); else raf = false; }); }
+    }, { passive: true });
+
+    $$('[data-magnet]').forEach(function (b) {
+      b.addEventListener('mousemove', function (e) { var r = b.getBoundingClientRect(); var x = (e.clientX - r.left - r.width / 2) * .25, y = (e.clientY - r.top - r.height / 2) * .35; b.style.transform = 'translate(' + x + 'px,' + y + 'px)'; });
+      b.addEventListener('mouseleave', function () { b.style.transform = ''; });
+    });
+
+    $$('[data-tilt]').forEach(function (wrap) {
+      var f = $('.frame', wrap), card = wrap.closest('.case');
+      card.addEventListener('mousemove', function (e) {
+        var r = f.getBoundingClientRect(); var px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+        f.style.transform = 'rotateY(' + ((px - .5) * 10) + 'deg) rotateX(' + ((.5 - py) * 8) + 'deg) translateZ(0)';
+        f.style.setProperty('--mx', (px * 100) + '%'); f.style.setProperty('--my', (py * 100) + '%');
+      });
+      card.addEventListener('mouseleave', function () { f.style.transform = ''; });
+    });
+  }
+
+  /* ---------- Modal ---------- */
+  var modal = $('#modal'), panel = $('.panel', modal), body = $('#modal-body'), crumb = $('#modal-crumb'), lastFocus = null;
+  function chips(list, cls) { return list.map(function (t) { return '<span class="chip' + (cls ? ' ' + cls : '') + '">' + esc(t) + '</span>'; }).join(''); }
+  function flow(list) { return '<ol class="flow" aria-label="Workflow">' + list.map(function (n, i) { return '<li><span class="edge" aria-hidden="true"></span><span class="node' + (i === 0 || i === list.length - 1 ? ' hl' : '') + '">' + esc(n) + '</span></li>'; }).join('') + '</ol>'; }
+  function sec(i, n, title, html) { return '<div class="cs" style="--i:' + i + '"><div class="lab"><span class="n">' + n + '</span><h3>' + title + '</h3></div><div class="body">' + html + '</div></div>'; }
+  function render(p) {
+    var h = '<div class="cs-top"><div class="cats">' + chips(p.cats, 'gold') + '</div><h2 id="modal-title">' + esc(p.name) + '</h2><p class="lead">' + esc(p.lead) + '</p><div class="cs-facts">' + p.facts.map(function (f) { return '<div><span class="k">' + esc(f[0]) + '</span><span class="v">' + esc(f[1]) + '</span></div>'; }).join('') + '</div></div>';
+    h += sec(1, '01', 'Overview', p.overview);
+    h += sec(2, '02', 'Business purpose', p.purpose);
+    h += sec(3, '03', 'Key features', '<div class="grid2">' + p.features.map(function (f) { return '<div class="chk">' + esc(f) + '</div>'; }).join('') + '</div>');
+    h += sec(4, '04', 'My contribution', p.contribution);
+    h += sec(5, '05', 'Technology stack', '<div class="cols">' + p.stack.map(function (g) { return '<div><h4>' + esc(g[0]) + '</h4><ul>' + g[1].map(function (t) { return '<li class="chip">' + esc(t) + '</li>'; }).join('') + '</ul></div>'; }).join('') + '</div>');
+    h += sec(6, '06', 'Workflow', flow(p.flow));
+    h += sec(7, '07', 'Technical implementation', '<div class="impl">' + p.impl.map(function (r) { return '<div><b>' + esc(r[0]) + '</b><span>' + esc(r[1]) + '</span></div>'; }).join('') + '</div>');
+    return h;
+  }
+  function openModal(key) {
+    var p = PROJECTS[key]; if (!p) return;
+    lastFocus = document.activeElement; crumb.textContent = p.name; body.innerHTML = render(p); panel.scrollTop = 0;
+    modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false'); document.body.classList.add('locked');
+    setTimeout(function () { panel.focus(); }, 30);
+    try { if (history.replaceState) history.replaceState(null, '', '#project-' + key); } catch (e) {}
+  }
+  function closeModal() {
+    if (!modal.classList.contains('open')) return;
+    modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); document.body.classList.remove('locked');
+    try { if (history.replaceState) history.replaceState(null, '', '#projects'); } catch (e) {}
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  $$('[data-project]').forEach(function (b) { b.addEventListener('click', function () { openModal(b.getAttribute('data-project')); }); });
+  $$('[data-close]', modal).forEach(function (b) { b.addEventListener('click', closeModal); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { if (modal.classList.contains('open')) closeModal(); else if (nav.classList.contains('open')) setMenu(false); }
+    if (e.key === 'Tab' && modal.classList.contains('open')) {
+      var f = $$('button, a[href], [tabindex]:not([tabindex="-1"])', panel).filter(function (el) { return el.offsetParent !== null; });
+      if (!f.length) return; var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && (document.activeElement === first || document.activeElement === panel)) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  var m = location.hash.match(/^#project-(\w+)$/); if (m && PROJECTS[m[1]]) openModal(m[1]);
+
+  /* ---------- Contact form ----------
+     HOW SENDING WORKS
+     Option A (default, no setup): "Send" opens the visitor's mail app with the
+       message pre-addressed to you, both fields already filled in.
+     Option B (recommended, 2 minutes): true in-page sending to your inbox.
+       1. Go to https://web3forms.com  (free) and enter abdullahdecent31@gmail.com
+       2. Copy the Access Key it emails you
+       3. Paste it below:  FORM_ENDPOINT = 'https://api.web3forms.com/submit'
+                           FORM_KEY      = 'your-access-key'
+       (Formspree also works: FORM_ENDPOINT = 'https://formspree.io/f/yourid', FORM_KEY = '')
+  ------------------------------------------------------------------ */
+  var FORM_ENDPOINT = 'https://api.web3forms.com/submit';
+  var FORM_KEY = '9245923b-24aa-4507-bec8-eb68ad424655';
+  var MY_EMAIL = 'abdullahdecent31@gmail.com';
+
+  var form = $('#cform'), fEmail = $('#f-email'), fMsg = $('#f-msg'), fSend = $('#f-send'), fStatus = $('#f-status');
+  function setStatus(t, cls) { fStatus.textContent = t; fStatus.className = 'form-msg' + (cls ? ' ' + cls : ''); }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = fEmail.value.trim(), msg = fMsg.value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setStatus('Please enter a valid email address so I can reply.', 'err'); fEmail.focus(); return; }
+    if (msg.length < 10) { setStatus('Tell me a little more about what you are making (at least 10 characters).', 'err'); fMsg.focus(); return; }
+    if (form.botcheck && form.botcheck.value) return; /* bot */
+
+    if (FORM_ENDPOINT) {
+      fSend.disabled = true; setStatus('Sending…');
+      var payload = { email: email, message: msg, subject: 'Portfolio enquiry from ' + email, from_name: 'Portfolio contact form' };
+      if (FORM_KEY) payload.access_key = FORM_KEY;
+      fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload) })
+        .then(function (r) { return r.json().catch(function () { return { success: r.ok }; }).then(function (j) { if (r.ok && j.success !== false) return j; throw new Error(j.message || ('Server responded ' + r.status)); }); })
+        .then(function () { setStatus('Sent. Thanks — I will reply to ' + email + ' shortly.', 'ok'); form.reset(); })
+        .catch(function (err) {
+          var why = (err && err.message && err.message !== 'Failed to fetch') ? err.message : 'no network access from this page';
+          setStatus('Could not send (' + why + '). Opening your mail app instead…', 'err'); openMail(email, msg);
+        })
+        .then(function () { fSend.disabled = false; });
+    } else {
+      openMail(email, msg);
+      setStatus('Your mail app should open with the message ready — just press send. If it did not, email me at ' + MY_EMAIL + '.', 'ok');
+    }
+  });
+  function openMail(email, msg) {
+    var subject = 'Project enquiry from ' + email;
+    var body = 'From: ' + email + '\n\nWhat I am making:\n' + msg + '\n\n— sent from your portfolio contact form';
+    window.location.href = 'mailto:' + MY_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  }
+
+  /* ---------- Ticker duplicate, copy, year ---------- */
+  var tk = $('#ticker'); if (tk) tk.innerHTML += tk.innerHTML;
+  $$('[data-copy]').forEach(function (btn) {
+    var label = $('span', btn);
+    btn.addEventListener('click', function () {
+      var text = btn.getAttribute('data-copy');
+      var done = function () { btn.classList.add('done'); label.textContent = 'Copied'; setTimeout(function () { btn.classList.remove('done'); label.textContent = 'Copy'; }, 1800); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, function () { fallback(text, done); }); else fallback(text, done);
+    });
+  });
+  function fallback(text, cb) { var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); cb(); } catch (e) {} document.body.removeChild(ta); }
+  $('#year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
